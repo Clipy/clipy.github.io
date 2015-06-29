@@ -10,7 +10,6 @@ var slider = function(){
 				object.addClass( 'control-active' );
 			}
 		}
-		console.log( index );
 		return;
 	};
 	var parameters = {
