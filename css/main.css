@@ -78,8 +78,11 @@ section > div , footer > div{
 	position: relative;
 	margin-top: 10px;
 	text-align: center;
+	width: 100% !important;
 }
 #screenshots-contents ul li{
+	width: 538px;
+	height: 378px;
 	float: left;
 }
 #screenshots-controls{
