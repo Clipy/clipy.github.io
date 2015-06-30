@@ -4,7 +4,7 @@
     <link>http://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.0</title>
+      <title>Clipy 1.0.1</title>
       <description>
         <![CDATA[
           <ul> <li></li> <li></li> <li></li> <li></li> </ul>
@@ -12,7 +12,8 @@
       </description>
       <pubDate>Thu, 30 Jul 2015 22:15: +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="http://github.com/Clipy/Clipy/release/download/1.0.0/Clipy_1.0.0.dmg" sparkle:version="1.0.0" length="107758" type="application/octet-stream" sparkle:dsaSignature="MCwCFCdoW13VBGJWIfIklKxQVyetgxE7AhQTVuY9uQT0KOV1UEk21epBsGZMPg=="/>
+      <enclosure url="http://clipy-app.com/1.0.1.zip" sparkle:version="1.0.1" length="20150630" type="application/octet-stream" sparkle:dsaSignature="MCsCFCeiF83k4QfQ8Q39ubuIUA+OkLv2AhNKaWPQqsEKBIgpHKQOqQCQEL3G"/>
+      <!--enclosure url="http://github.com/Clipy/Clipy/release/download/1.0.0/Clipy_1.0.0.dmg" sparkle:version="1.0.0" length="107758" type="application/octet-stream" sparkle:dsaSignature="MCwCFCdoW13VBGJWIfIklKxQVyetgxE7AhQTVuY9uQT0KOV1UEk21epBsGZMPg=="/-->
     </item>
   </channel>
 </rss>
