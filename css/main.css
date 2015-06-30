@@ -85,6 +85,10 @@ section > div , footer > div{
 	height: 378px;
 	float: left;
 }
+#screenshots-contents ul li img{
+	width: 538px;
+	height: 378px;
+}
 #screenshots-controls{
 	width: 600px;
 	text-align: center;
@@ -103,6 +107,11 @@ section > div , footer > div{
 #control-left{
 	margin-right: 16px;
 	background-image: url( '../img/button-off-left.png' );
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .control-on-button{
 	width: 40px;
@@ -112,20 +121,31 @@ section > div , footer > div{
 }
 #control-on-left{
 	background-image: url( '../img/button-on-left.png' );
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 #control-right{
 	margin-left: 16px;
 	background-image: url( '../img/button-off-right.png' );
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 #control-on-right{
 	background-image: url( '../img/button-on-right.png' );
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .control-position{
 	margin: 0px 6px;
 	width: 98px;
 	height: 78px;
 	border: 1px solid rgba( 255 , 255 , 255 , 0.5 );
-	background-repeat: no-repeat;;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 .control-active{
 	border: 1px solid rgba( 255 , 255 , 255 , 1 );
@@ -156,13 +176,32 @@ section > div , footer > div{
 #function-contents{
 	float: right;
 	width: 300px;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .function-list{
-	list-style-image: url( '../img/function-list.png' );
+	list-style: none;
 	font-size: 14px;
 	line-height: 28px;
 	margin-bottom: 26px;
+	position: relative;
+}
+.function-list:before{
+	position: absolute;
+	top: 8px;
+	left: -19px;
+	content: '';
+	display: block;
+	height: 10px;
+	width: 10px;
+	background-image: url( '../img/function-list.png' );
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+@-moz-document url-prefix() {
+	.function-list:before{
+		top: 9px;
+	}
 }
 
 /***** opensource *****/
@@ -179,6 +218,9 @@ section > div , footer > div{
 	height: 50px;
 	margin: 30px auto 42px;
 	background-image: url( '../img/opensource.png' );
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 /***** thanks *****/
