@@ -4,15 +4,15 @@
     <link>http://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.1</title>
+      <title>Clipy 1.0.0</title>
       <description>
         <![CDATA[
-          <ul> <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> <li>Suspendisse sed felis ac ante ultrices rhoncus. Etiam quis elit vel nibh placerat facilisis in id leo.</li> <li>Vestibulum nec tortor odio, nec malesuada libero. Cras vel convallis nunc.</li> <li>Suspendisse tristique massa eget velit consequat tincidunt. Praesent sodales hendrerit pretium.</li> </ul>
+          <ul> <li></li> <li></li> <li></li> <li></li> </ul>
         ]]>
       </description>
       <pubDate>Thu, 30 Jul 2015 22:15: +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="http://github.com/Clipy/Clipy/release/download/1.0.1/Clipy_1.0.1.dmg" sparkle:version="1.0.1" length="107758" type="application/octet-stream" sparkle:dsaSignature="MCwCFCdoW13VBGJWIfIklKxQVyetgxE7AhQTVuY9uQT0KOV1UEk21epBsGZMPg=="/>
+      <enclosure url="http://github.com/Clipy/Clipy/release/download/1.0.0/Clipy_1.0.0.dmg" sparkle:version="1.0.0" length="107758" type="application/octet-stream" sparkle:dsaSignature="MCwCFCdoW13VBGJWIfIklKxQVyetgxE7AhQTVuY9uQT0KOV1UEk21epBsGZMPg=="/>
     </item>
   </channel>
 </rss>
