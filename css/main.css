@@ -46,17 +46,40 @@ section > div , footer > div{
 	font-size: 16px;
 	margin-top: 24px;
 }
-#application-download{
+#application-contents #application-download{
 	display: block;
 	width: 134px;
 	font-family: 'Montserrat' , sans-serif;
-	color: ##061E2E;
+	color: #061E2E;
 	font-size: 18px;
 	border-radius: 3px;
 	border: 1px solid #3A1200;
 	text-align: center;
 	margin-top: 44px;
 	padding: 13px 0px;
+
+	-webkit-transition:
+	color 0.42s cubic-bezier(.42,.17,.45,.98),
+	background-color 0.42s cubic-bezier(.42,.17,.45,.98),
+	border 0.3s ease-out;
+	-moz-transition:
+	color 0.42s cubic-bezier(.42,.17,.45,.98),
+	background-color 0.42s cubic-bezier(.42,.17,.45,.98),
+	border 0.3s ease-out;
+	-ms-transition:
+	color 0.42s cubic-bezier(.42,.17,.45,.98),
+	background-color 0.42s cubic-bezier(.42,.17,.45,.98),
+	border 0.3s ease-out;
+	transition:
+	color 0.42s cubic-bezier(.42,.17,.45,.98),
+	background-color 0.42s cubic-bezier(.42,.17,.45,.98),
+	border 0.3s ease-out;
+}
+#application-contents #application-download:hover{
+	text-decoration: none;
+	background-color: #3999D8;
+	color: #FFFFFF;
+	border: 1px solid #3999D8;
 }
 #application-condition{
 	font-size: 16px;
