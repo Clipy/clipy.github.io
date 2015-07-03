@@ -266,14 +266,17 @@ section > div , footer > div{
 
 /***** footer *****/
 footer{
-	height: 150px;
+	height: 114px;
 	background-color: #F3F6F7;
+}
+footer > div {
+	overflow: visible !important;
 }
 #social{
 	margin: 2em;
 	text-align: center;
-	height: 35px;
-	overflow: visible
+	height: 22px;
+	overflow: visible;
 }
 #social > *{
 	max-width: 90px;
