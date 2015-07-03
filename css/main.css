@@ -266,18 +266,20 @@ section > div , footer > div{
 
 /***** footer *****/
 footer{
-	height: 114px;
+	height: 150px;
 	background-color: #F3F6F7;
 }
 #social{
 	margin: 2em;
 	text-align: center;
-	height: 22px;
+	height: 35px;
+	overflow: visible
 }
 #social > *{
 	max-width: 90px;
 	margin: 0px 5px;
 	vertical-align: top;
+	overflow: visible;
 }
 #copyright{
 	color: #526E79;
