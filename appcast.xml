@@ -12,7 +12,7 @@
       </description>
       <pubDate>Sun, 5 July 2015 03:04:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="http://github.com/Clipy/Clipy/release/download/1.0.1/Clipy_1.0.1.dmg" sparkle:version="1.0.1" length="20150704" type="application/octet-stream" sparkle:dsaSignature="MCwCFDIOlk3gJGTc46P1CQgWrE8S5HYlAhQ5BW9XLWApES7lmglPg0Vn0pXpnA=="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.1/Clipy_1.0.1.dmg" sparkle:version="1.0.1" length="20150704" type="application/octet-stream" sparkle:dsaSignature="MCwCFDIOlk3gJGTc46P1CQgWrE8S5HYlAhQ5BW9XLWApES7lmglPg0Vn0pXpnA=="/>
     </item>
   </channel>
 </rss>
