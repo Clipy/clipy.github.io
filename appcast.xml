@@ -4,15 +4,15 @@
     <link>http://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.1</title>
+      <title>Clipy 1.0.2</title>
       <description>
         <![CDATA[
-          <ul> <li>Marvericsでメニューバーが表示されない問題の修正</li> </ul>
+            <ul> <li>履歴クリア時のアラート設定が反映されない問題の修正</li> <li>デザイン変更に向け、フォルダとテキストのアイコンを変更</li> </ul>
         ]]>
       </description>
-      <pubDate>Sun, 5 July 2015 03:04:00 +0900</pubDate>
+      <pubDate>Tue, 14 July 2015 02:25:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.1/Clipy_1.0.1.dmg" sparkle:version="1.0.1" length="20150704" type="application/octet-stream" sparkle:dsaSignature="MCwCFDIOlk3gJGTc46P1CQgWrE8S5HYlAhQ5BW9XLWApES7lmglPg0Vn0pXpnA=="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.2/Clipy_1.0.2.dmg" sparkle:version="1.0.2" length="20150714" type="application/octet-stream" sparkle:dsaSignature="MCwCFAwdLfrV23uL1zrK2Sly+6inuJ0tAhRhJPRz7ZbTEQ4gDFsn93B0Y+nEiQ=="/>
     </item>
   </channel>
 </rss>
