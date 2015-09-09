@@ -4,15 +4,15 @@
     <link>http://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.3</title>
+      <title>Clipy 1.0.4</title>
       <description>
         <![CDATA[
-            <ul> <li>安定性の向上</li> <li>コピーした画像のサムネイル表示に対応</li> <li>除外アプリケーション設定を削除</li> </ul>
+            <ul> <li>コピーした履歴が削除されない不具合の修正</li> <li>安定性の向上</li> </ul>
         ]]>
       </description>
-      <pubDate>Mon, 27 July 2015 21:53:00 +0900</pubDate>
+      <pubDate>Thu, 10 September 2015 04:27:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.3/Clipy_1.0.3.dmg" sparkle:version="1.0.3" length="20150727" type="application/octet-stream" sparkle:dsaSignature="MCwCFDRAyqpSssn2dQq6M+Wi2WQdu+/pAhRfyEDQKTxz4dna6+/IMVwob+FhzA=="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.4/Clipy_1.0.4.dmg" sparkle:version="1.0.4" length="20150910" type="application/octet-stream" sparkle:dsaSignature="MC0CFC/8s9TdiZeZRJdho+HN7OSZI6D0AhUAgHkXyrAjFzQl35sSqFCFI9iSZ00="/>
     </item>
   </channel>
 </rss>
