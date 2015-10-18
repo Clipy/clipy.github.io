@@ -4,15 +4,15 @@
     <link>http://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.4</title>
+      <title>Clipy 1.0.5</title>
       <description>
         <![CDATA[
-            <ul> <li>コピーした履歴が削除されない不具合の修正</li> <li>安定性の向上</li> </ul>
+            <ul> <li>メモリの使用量が多くなる問題の修正</li> <li>重複履歴の上書きに関する設定を追加</li> <li>OSX El Capitanを公式サポート</li> </ul>
         ]]>
       </description>
-      <pubDate>Thu, 10 September 2015 04:27:00 +0900</pubDate>
+      <pubDate>Sun, 18 October 2015 22:19:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.4/Clipy_1.0.4.dmg" sparkle:version="1.0.4" length="20150910" type="application/octet-stream" sparkle:dsaSignature="MC0CFC/8s9TdiZeZRJdho+HN7OSZI6D0AhUAgHkXyrAjFzQl35sSqFCFI9iSZ00="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.5/Clipy_1.0.5.dmg" sparkle:version="1.0.5" length="20151018" type="application/octet-stream" sparkle:dsaSignature="MCwCFDSZaZ6VXOB1A3h9RDPsYWVpjr2iAhR9zO8d9Ms2HGrn9AGx9tTTpE4FhA=="/>
     </item>
   </channel>
 </rss>
