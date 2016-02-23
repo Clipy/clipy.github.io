@@ -1,18 +1,18 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>Clipy changelog</title>
-    <link>http://clipy-app.com/appcast.xml</link>
+    <link>https://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.5</title>
+      <title>Clipy 1.0.7</title>
       <description>
         <![CDATA[
-            <ul> <li>メモリの使用量が多くなる問題の修正</li> <li>重複履歴の上書きに関する設定を追加</li> <li>OSX El Capitanを公式サポート</li> </ul>
+            <ul> <li>El Capitanへの対応ができていなかった不具合の修正/li> <li>バグ修正</li> <li>重複履歴に関する設定を追加</li> </ul>
         ]]>
       </description>
-      <pubDate>Sun, 18 October 2015 22:19:00 +0900</pubDate>
+      <pubDate>Wed, 24 February 2016 00:47:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.5/Clipy_1.0.5.dmg" sparkle:version="1.0.5" length="20151018" type="application/octet-stream" sparkle:dsaSignature="MCwCFDSZaZ6VXOB1A3h9RDPsYWVpjr2iAhR9zO8d9Ms2HGrn9AGx9tTTpE4FhA=="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.7/Clipy_1.0.7.dmg" sparkle:version="1.0.7" length="20160224" type="application/octet-stream" sparkle:dsaSignature="MCwCFDZgnKDv1ukNJzSbTvrOykTrDjHRAhQhxJ/zCiWQ+pUZYSfli50PRBt7Zw=="/>
     </item>
   </channel>
 </rss>
