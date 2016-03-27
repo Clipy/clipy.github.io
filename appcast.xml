@@ -4,15 +4,15 @@
     <link>https://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.7</title>
+      <title>Clipy 1.0.8</title>
       <description>
         <![CDATA[
-            <ul> <li>El Capitanへの対応ができていなかった不具合の修正</li> <li>バグ修正</li> <li>重複履歴に関する設定を追加</li> </ul>
+            <ul> <li>特定端末でスニペットがペーストできない問題の修正</li> <li>バグ修正</li> <li>初回インストール時に開発元が不明とアラートがでる問題の修正</li> </ul>
         ]]>
       </description>
-      <pubDate>Wed, 24 February 2016 00:47:00 +0900</pubDate>
+      <pubDate>Sun, 27 March 2016 16:58:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.7/Clipy_1.0.7.dmg" sparkle:version="1.0.7" length="20160224" type="application/octet-stream" sparkle:dsaSignature="MCwCFDZgnKDv1ukNJzSbTvrOykTrDjHRAhQhxJ/zCiWQ+pUZYSfli50PRBt7Zw=="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.8/Clipy_1.0.8.dmg" sparkle:version="1.0.8" length="20160327" type="application/octet-stream" sparkle:dsaSignature="MC0CFDUC//smhl84lh4qy6mtmP2Vjx9GAhUAlMrNES727pP3MN5xwfu1IVM4vxo="/>
     </item>
   </channel>
 </rss>
