@@ -4,15 +4,15 @@
     <link>https://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.8</title>
+      <title>Clipy 1.0.9</title>
       <description>
         <![CDATA[
-            <ul> <li>特定端末でスニペットがペーストできない問題の修正</li> <li>バグ修正</li> <li>初回インストール時に開発元が不明とアラートがでる問題の修正</li> </ul>
+            <ul> <li>英語環境下で設定画面を開くとアプリがクラッシュする問題の修正</li> <li>スニペット編集画面でアプリがクラッシュする問題の修正</li> <li>swift2.2のサポート</li> </ul>
         ]]>
       </description>
-      <pubDate>Sun, 27 March 2016 16:58:00 +0900</pubDate>
+      <pubDate>Tue, 05 Apr 2016 01:15:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.8/Clipy_1.0.8.dmg" sparkle:version="1.0.8" length="20160327" type="application/octet-stream" sparkle:dsaSignature="MC0CFDUC//smhl84lh4qy6mtmP2Vjx9GAhUAlMrNES727pP3MN5xwfu1IVM4vxo="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.9/Clipy_1.0.9.dmg" sparkle:version="1.0.9" length="20160405" type="application/octet-stream" sparkle:dsaSignature="MCwCFGS/bZVDZMqmlM5Okv8kw2ucYOaGAhQlAb5PL96CI3rX3ZAGpp1HMjbUGQ=="/>
     </item>
   </channel>
 </rss>
