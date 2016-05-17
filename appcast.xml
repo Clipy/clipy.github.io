@@ -4,15 +4,27 @@
     <link>https://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.0.9</title>
+      <title>Clipy 1.0.10</title>
       <description>
         <![CDATA[
-            <ul> <li>英語環境下で設定画面を開くとアプリがクラッシュする問題の修正</li> <li>スニペット編集画面でアプリがクラッシュする問題の修正</li> <li>swift2.2のサポート</li> </ul>
+          <section>
+            <h3>Clipy 1.0.10</h3>
+            <ul> 
+              <li>設定画面をリニューアルしました</li>
+              <li>Clipy使用中にアプリのCPU使用率が100%になる問題の修正を行いました</li>
+            </ul>
+          </section>
+          <hr size="1">
+          <section>
+            今回のバージョンから開発者PCではCPU使用率が100%になりアプリが固まる問題が発生しておりません。<br>
+            もし、今回のバージョン後もCPU使用率の問題が改善しない場合は<a href="https://github.com/Clipy/Clipy/issues/new">issue</a>を作成していただくか、<br>
+            Twitter <a href="https://twitter.com/econa77">@econa77</a> か <a href="https://twitter.com/clipyapp">@clipyapp</a> まで御連絡いただけると助かります。<br>
+          </section>
         ]]>
       </description>
-      <pubDate>Tue, 05 Apr 2016 01:15:00 +0900</pubDate>
+      <pubDate>Wed, 18 May 2016 03:37:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.9/Clipy_1.0.9.dmg" sparkle:version="1.0.9" length="20160405" type="application/octet-stream" sparkle:dsaSignature="MCwCFGS/bZVDZMqmlM5Okv8kw2ucYOaGAhQlAb5PL96CI3rX3ZAGpp1HMjbUGQ=="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.0.10/Clipy_1.0.10.dmg" sparkle:version="1.0.10" length="20160518" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCN9mgRg3b6/ySt5Wd9u5VArXpNqAIUCE+6mO6yUZXXRRyLWBVLNVkurBs="/>
     </item>
   </channel>
 </rss>
