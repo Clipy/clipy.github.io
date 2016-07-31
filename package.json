@@ -1,0 +1,39 @@
+{
+  "name": "clipy.github.io",
+  "version": "1.0.0",
+  "description": "a site of clipy",
+  "main": "src/javascripts/index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clipy/clipy.github.io.git"
+  },
+  "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Clipy/clipy.github.io/issues"
+  },
+  "homepage": "https://github.com/Clipy/clipy.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "normalize.css": "^4.2.0",
+    "react": "^15.3.0",
+    "react-bootstrap": "^0.30.0",
+    "react-dom": "^15.3.0",
+    "rect": "^1.2.1"
+  }
+}
