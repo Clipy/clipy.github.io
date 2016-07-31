@@ -1,0 +1,20 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.blueButton {
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  border: solid 3px #3d90c9;
+}
+
+.whiteButton {
+  color: #fff;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  border: solid 3px #ffffff;
+}

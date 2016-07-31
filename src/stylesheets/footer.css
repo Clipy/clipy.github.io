@@ -1,0 +1,15 @@
+.container {
+  height: 129px;
+  text-align: center;
+  background: #f3f6f7;
+}
+
+.sns {
+}
+
+.copyright {
+  font-family: .HelveticaNeueDeskInterface;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a4a4a;
+}

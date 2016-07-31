@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+  composes: container from './common.css';
+}
+
+.image {
+  width: 430px;
+  height: 270px;
+  margin: auto;
+  background: url("../../images/image_repository.png");
+  background-size: cover;
+}
