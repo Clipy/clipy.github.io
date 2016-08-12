@@ -5,18 +5,19 @@
 }
 
 .icon {
-  width: 342px;
-  height: 456px;
-  box-shadow: -26px 27px 14px 0 rgba(20, 35, 53, 0.31);
+  width: 170px;
+  height: 230px;
+  margin: auto;
+  box-shadow: -13px 13px 7px 0 rgba(20, 35, 53, 0.31);
   background: url("../../images/clipy_logo.png");
   background-size: cover;
 }
 
 .description {
-  width: 342px;
-  height: 116px;
+  margin-top: 10px;
+  height: 50px;
   font-family: HiraKakuPro-W3;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.44;
   color: #4a4a4a;
@@ -24,16 +25,21 @@
 
 .downloadButton {
   composes: blueButton from './common.css';
-  width: 282px;
-  height: 82px;
+  composes: mainColor from './common.css';
+  width: 140px;
+  height: 40px;
   font-family: HiraKakuProN-W6;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 400;
   text-align: center;
-  color: #3d90c9;
+}
+
+.downloadDescription {
+  font-size: 9px;
 }
 
 .name {
-  font-size: 90px;
-  margin: 0;
+  composes: mainColor from './common.css';
+  font-size: 45px;
+  margin: 0 0 15px 0;
 }

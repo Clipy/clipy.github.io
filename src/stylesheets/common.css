@@ -4,11 +4,15 @@
   align-items: center;
 }
 
+.mainColor {
+  color: #3f9ad6;
+}
+
 .blueButton {
   outline: none;
   background: rgba(0, 0, 0, 0);
   border-radius: 10px;
-  border: solid 3px #3d90c9;
+  border: solid 3px #3f9ad6;
 }
 
 .whiteButton {
