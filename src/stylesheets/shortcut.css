@@ -1,0 +1,10 @@
+.container {
+  composes: container from './common.css';
+}
+
+.image {
+  width: 430px;
+  height: 270px;
+  background: url("../../images/image_shortcut.png");
+  background-size: cover;
+}

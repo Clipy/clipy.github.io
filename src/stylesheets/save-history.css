@@ -1,0 +1,10 @@
+.container {
+  composes: container from './common.css';
+}
+
+.image {
+  background: url("../../images/image_copy.png");
+  width: 626px;
+  height: 386px;
+  object-fit: contain;
+}

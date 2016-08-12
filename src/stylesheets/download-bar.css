@@ -1,0 +1,19 @@
+.container {
+  width: 100vw;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3d90c9;
+}
+
+.button {
+  composes: whiteButton from './common.css';
+  height: 82px;
+  width: 282px;
+  font-family: HiraKakuProN-W6;
+  font-size: 29.7px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
