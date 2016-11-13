@@ -4,12 +4,12 @@
     <link>https://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.1.0</title>
-      <sparkle:releaseNotesLink xml:lang="en">https://clipy-app.com/releasenotes/1.1.0.en.html</sparkle:releaseNotesLink>
-			<sparkle:releaseNotesLink xml:lang="ja">https://clipy-app.com/releasenotes/1.1.0.ja.html</sparkle:releaseNotesLink>
-      <pubDate>Tue, 19 Jul 2016 21:30:00 +0900</pubDate>
+      <title>Clipy 1.1.1</title>
+      <sparkle:releaseNotesLink xml:lang="en">https://clipy-app.com/releasenotes/1.1.1.en.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink xml:lang="ja">https://clipy-app.com/releasenotes/1.1.1.ja.html</sparkle:releaseNotesLink>
+      <pubDate>Mon, 14 Nov 2016 01:30:00 +0900</pubDate>
       <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.1.0/Clipy_1.1.0.dmg" sparkle:version="1.1.0" length="20160719" type="application/octet-stream" sparkle:dsaSignature="MCwCFHaQmVeq4OHv7PjxB9/S65VUpy6cAhR63FFJ2di8q69MwMQXWARTk6OLrA=="/>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.1.1/Clipy_1.1.1.dmg" sparkle:version="1.1.1" length="20161114" type="application/octet-stream" sparkle:dsaSignature="MC0CFD0tC4hwVP5ptGJa86Oo52lJn4krAhUAkIJqInwX77eGO06H8YzKW9l+8nQ="/>
     </item>
   </channel>
 </rss>
