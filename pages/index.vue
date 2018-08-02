@@ -3,6 +3,12 @@
     <pc-header/>
     <section class="container">
       <div>
+        {{ $t('welcome') }}
+        <nuxt-link
+        v-for="locale in $i18n.locales"
+        v-if="locale.code !== $i18n.locale"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)"><span class="languages">{{ locale.name }}</span></nuxt-link>
         <h1 class="title">
           clipy.github.io
         </h1>
@@ -62,6 +68,11 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+.languages {
+  display: inline-block;
+  margin: 0 4px;
 }
 </style>
 
