@@ -34,6 +34,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  css: [
+    'normalize.css'
+  ]
 }
 

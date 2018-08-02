@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "npm": "^6.2.0",
     "nuxt": "^1.0.0"
   },
