@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pc-header/>
+    <clipy-header/>
     <section class="container">
       <div>
         {{ $t('welcome') }}
@@ -31,11 +31,11 @@
 </template>
 
 <script>
-import PcHeader from '~/components/PcHeader.vue'
+import ClipyHeader from '~/components/header/ClipyHeader.vue'
 
 export default {
   components: {
-    PcHeader
+    ClipyHeader
   }
 }
 </script>
