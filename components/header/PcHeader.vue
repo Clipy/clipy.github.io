@@ -5,7 +5,7 @@
       <ul class="header-buttons">
         <li><a href="#">{{ $t('header.navigation.history') }}</a></li>
         <li><a href="#">{{ $t('header.navigation.snippet') }}</a></li>
-        <li><a href="#">{{ $t('header.navigation.call-freely') }}</a></li>
+        <li><a href="#">{{ $t('header.navigation.shortcut') }}</a></li>
         <li><a href="#">{{ $t('header.navigation.open-source') }}</a></li>
       </ul>
     </nav>

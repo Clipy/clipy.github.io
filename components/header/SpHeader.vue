@@ -8,7 +8,7 @@
     <ul class="header-menu">
       <li><a href="#">{{ $t('header.navigation.history') }}</a></li>
       <li><a href="#">{{ $t('header.navigation.snippet') }}</a></li>
-      <li><a href="#">{{ $t('header.navigation.call-freely') }}</a></li>
+      <li><a href="#">{{ $t('header.navigation.shortcut') }}</a></li>
       <li><a href="#">{{ $t('header.navigation.open-source') }}</a></li>
       <li class="social-container"><social-buttons class="social-buttons"/></li>
     </ul>
