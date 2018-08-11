@@ -1,7 +1,7 @@
 <template>
   <div class="pc-header">
     <clipy-logo/>
-    <nav>
+    <nav class="pc-header-nav">
       <ul class="header-buttons">
         <li><a href="#">{{ $t('header.navigation.history') }}</a></li>
         <li><a href="#">{{ $t('header.navigation.snippet') }}</a></li>
@@ -37,6 +37,12 @@ export default {
   margin-top: 30px;
   margin-left: 40px;
   margin-right: 40px;
+  min-width: 1000px;
+}
+
+.pc-header-nav {
+  margin-left: 20px;
+  flex: 1;
 }
 
 .header-buttons {
