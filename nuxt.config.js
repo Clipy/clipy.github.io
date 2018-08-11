@@ -34,6 +34,43 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  css: [
+    'normalize.css'
+  ],
+  modules: [
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'en',
+          name: 'English',
+          iso: 'en-US'
+        },
+        {
+          code: 'fr',
+          name: 'Français',
+          iso: 'fr-FR'
+        },
+        {
+          code: 'ja',
+          name: '日本語',
+          iso: 'ja-JP'
+        },
+      ],
+      defaultLocale: 'en',
+      detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: 'i18n_redirected'
+      },
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: {
+          en: require('./locales/en.json'),
+          fr: require('./locales/fr.json'),
+          ja: require('./locales/ja.json')
+        }
+      }
+    }]
+  ]
 }
 

@@ -1,0 +1,17 @@
+{
+  "welcome": "Welcome",
+  "header": {
+    "navigation": {
+      "history": "コピー履歴",
+      "snippet": "スニペット",
+      "shortcut": "自由に呼び出し",
+      "open-source": "オープンソース"
+    }
+  },
+  "button": {
+    "download": {
+      "title": "Download"
+    }
+  }
+}
+

@@ -5,7 +5,7 @@
   "author": "Kouki Saito <dan.addr.skd@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "HOST=0.0.0.0 PORT=3000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,8 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "npm": "^6.2.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "nuxt-i18n": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
