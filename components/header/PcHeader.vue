@@ -12,7 +12,7 @@
     <div class="sns-buttons">
       <social-buttons/>
     </div>
-    <download-button/>
+    <download-button class="pc-header-download-button"/>
   </div>
 </template>
 
@@ -70,6 +70,11 @@ export default {
   min-width: 210px;
   margin: 8px 0;
   flex-shrink: 2;
+}
+
+.pc-header-download-button {
+  margin-top: -10px;
+  margin-left: 8px;
 }
 
 </style>

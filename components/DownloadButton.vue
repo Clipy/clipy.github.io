@@ -4,8 +4,6 @@
 
 <style>
 .download-button {
-  margin-top: -10px;
-  margin-left: 8px;
   width: 176px;
   height: 52px;
   line-height: 48px;

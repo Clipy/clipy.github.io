@@ -1,6 +1,7 @@
 <template>
   <div>
     <clipy-header/>
+    <clipy-top/>
     <section class="container">
       <div>
         {{ $t('welcome') }}
@@ -32,10 +33,12 @@
 
 <script>
 import ClipyHeader from '~/components/header/ClipyHeader.vue'
+import ClipyTop from '~/components/ClipyTop.vue'
 
 export default {
   components: {
-    ClipyHeader
+    ClipyHeader,
+    ClipyTop
   }
 }
 </script>
