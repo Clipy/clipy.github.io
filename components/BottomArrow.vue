@@ -28,6 +28,7 @@ export default {
   position: relative;
   display: inline-block;
   padding-left: 20px;
+  height: 50px;
 }
 
 .arrow {
