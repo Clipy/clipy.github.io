@@ -1,6 +1,27 @@
 <template>
   <div>
     <clipy-header/>
+    <clipy-top/>
+    <feature-section
+      v-bind:title="$t('history.title')"
+      v-bind:description="$t('history.description')"
+      iconImageUrl="/images/icon-history.png"
+      mainImageUrl="/images/screenshot-history.png"
+      blueColor
+    />
+    <feature-section
+      v-bind:title="$t('snippet.title')"
+      v-bind:description="$t('snippet.description')"
+      iconImageUrl="/images/icon-snippet.png"
+      mainImageUrl="/images/screenshot-snippet.png"
+    />
+    <feature-section
+      v-bind:title="$t('shortcut.title')"
+      v-bind:description="$t('shortcut.description')"
+      iconImageUrl="/images/icon-shortcut.png"
+      mainImageUrl="/images/screenshot-shortcut.png"
+      blueColor
+    />
     <section class="container">
       <div>
         {{ $t('welcome') }}
@@ -32,10 +53,14 @@
 
 <script>
 import ClipyHeader from '~/components/header/ClipyHeader.vue'
+import ClipyTop from '~/components/ClipyTop.vue'
+import FeatureSection from '~/components/FeatureSection.vue'
 
 export default {
   components: {
-    ClipyHeader
+    ClipyHeader,
+    ClipyTop,
+    FeatureSection,
   }
 }
 </script>
