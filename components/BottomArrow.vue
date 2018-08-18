@@ -42,6 +42,7 @@ export default {
   border-right: solid 1.5px var(--color);
   transform: rotate(135deg);
   position: absolute;
+  z-index: -1;
   top: 50%;
   left: 0;
   margin-top: -4px;

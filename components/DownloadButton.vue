@@ -1,5 +1,9 @@
 <template>
-  <div class="download-button" :style="styles">{{ $t('button.download.title') }}</div>
+  <div class="download-button" :style="styles">
+    <a class="application-download" href="https://github.com/Clipy/Clipy/releases/download/1.1.5/Clipy_1.1.5.dmg">
+      {{ $t('button.download.title') }}
+    </a>
+  </div>
 </template>
 
 
@@ -34,6 +38,11 @@ export default {
   font-size: 18px;
   text-align: center;
   user-select: none;
-  cursor: pointer;
+}
+
+.download-button a {
+  display: block;
+  color: currentcolor;
+  text-decoration: none;
 }
 </style>

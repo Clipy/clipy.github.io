@@ -59,7 +59,7 @@
 
 .top-logo {
   font-size: 4em;
-  margin-right: .3em;
+  margin-right: .1em;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,13 +93,6 @@
   .top-description-container {
     flex-direction: column;
     text-align: center;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  .top-description-container {
-    flex-direction: column;
     font-size: .8em;
   }
 }
@@ -107,7 +100,14 @@
 .top-description {
   margin: 40px 0;
   font-size: 2em;
+  line-height: 1.5em;
   width: 380px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-description {
+    width: 100%;
+  }
 }
 
 .top-download-button {
@@ -116,10 +116,24 @@
   line-height: 56px;
 }
 
+@media screen and (max-width: 768px) {
+  .top-download-button {
+    display: none;
+  }
+}
+
 .top-support-os {
   margin: 20px;
   font-size: .9em;
   color: #444;
+}
+
+
+@media screen and (max-width: 768px) {
+  .top-support-os {
+    margin: 0;
+    margin-top: -8px;
+  }
 }
 
 </style>

@@ -4,10 +4,11 @@
       <div class="github-icon-container">
         <img src="/images/icon-github.png" alt="icon" />
       </div>
-      <h2 class="open-source-title" :style="styles">{{ $t('open-source.title') }}</h2>
-      <div class="open-source-description" :style="styles">{{ $t('open-source.description') }}</div>
-      <img class="github-link" src="images/button-github.png" alt="link to github" />
-      <img class="github-screenshot" src="images/screenshot-github.png" alt="screenshot" />
+      <h2 class="open-source-title">{{ $t('open-source.title') }}</h2>
+      <div class="open-source-description">{{ $t('open-source.description') }}</div>
+      <a href="https://github.com/Clipy/Clipy">
+        <img class="github-link" src="images/button-github.png" alt="link to github" />
+      </a>
     </section>
     <bottom-arrow/>
   </section>
@@ -47,7 +48,6 @@ export default {
   }
 }
 
-
 .github-icon-container {
   width: 36px;
   height: 36px;
@@ -77,6 +77,7 @@ export default {
   width: 620px;
   margin-top: 20px;
   margin-bottom: 36px;
+  line-height: 1.8em;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,7 +92,6 @@ export default {
 .github-link {
   width: 260px;
   height: 80px;
-  margin-bottom: 36px;
 }
 
 @media screen and (max-width: 768px) {

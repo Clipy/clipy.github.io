@@ -2,6 +2,9 @@
   <div>
     <clipy-header/>
     <clipy-top/>
+    <div class="in-page-anchor">
+      <div id="history"></div>
+    </div>
     <feature-section
       v-bind:title="$t('history.title')"
       v-bind:description="$t('history.description')"
@@ -9,12 +12,18 @@
       mainImageUrl="/images/screenshot-history.png"
       blueColor
     />
+    <div class="in-page-anchor">
+      <div id="snippet"></div>
+    </div>
     <feature-section
       v-bind:title="$t('snippet.title')"
       v-bind:description="$t('snippet.description')"
       iconImageUrl="/images/icon-snippet.png"
       mainImageUrl="/images/screenshot-snippet.png"
     />
+    <div class="in-page-anchor">
+      <div id="shortcut"></div>
+    </div>
     <feature-section
       v-bind:title="$t('shortcut.title')"
       v-bind:description="$t('shortcut.description')"
@@ -22,6 +31,9 @@
       mainImageUrl="/images/screenshot-shortcut.png"
       blueColor
     />
+    <div class="in-page-anchor">
+      <div id="open-source"></div>
+    </div>
     <open-source-section/>
     <special-thanks-section/>
     <clipy-footer/>
@@ -49,6 +61,12 @@ export default {
 </script>
 
 <style>
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat' );
+
+*{
+  font-family: 'ヒラギノ角ゴ Pro W3' , 'Hiragino Kaku Gothic ProN' , 'Montserrat' , sans-serif;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -57,30 +75,20 @@ export default {
   text-align: center;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.in-page-anchor {
+  position: relative;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.in-page-anchor div {
+  position: absolute;
+  margin-top: -80px;
 }
 
-.links {
-  padding-top: 15px;
+@media screen and (max-width: 768px) {
+  .in-page-anchor div {
+    margin-top: -59px;
+  }
 }
 
-.languages {
-  display: inline-block;
-  margin: 0 4px;
-}
 </style>
 

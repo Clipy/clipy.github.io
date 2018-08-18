@@ -22,6 +22,21 @@ export default {
 </script>
 
 <style>
+
+.header {
+  position: relative;
+}
+
+.pc-header-container {
+  position: relative;
+  height: 80px;
+}
+
+.sp-header-container {
+  position: relative;
+  height: 60px;
+}
+
 @media screen and (max-width: 768px) {
   .pc-header-container {
     display: none;

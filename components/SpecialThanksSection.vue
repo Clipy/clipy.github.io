@@ -5,7 +5,7 @@
       <div class="clipmenu-icon-container">
         <img src="/images/clipmenu.png" alt="ClipMenu icon" />
       </div>
-      <div class="special-thanks-description">{{ $t('special-thanks.description') }}</div>
+      <div class="special-thanks-description"  v-html="$t('special-thanks.description')"></div>
     </section>
     <bottom-arrow/>
   </section>
@@ -63,7 +63,7 @@ export default {
   width: 600px;
   margin-top: 20px;
   margin-bottom: 36px;
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 
 @media screen and (max-width: 768px) {

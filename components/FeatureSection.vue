@@ -106,10 +106,8 @@ export default {
 }
 
 .feature-icon img {
-  width: 38px;
+  width: 42px;
   height: 42px;
-  margin-top: -3px;
-  margin-left: 3px;
 }
 
 
@@ -124,11 +122,12 @@ export default {
 
 .feature-title {
   width: 320px;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: normal;
   margin: 12px 0;
   color: var(--color);
   text-align: left;
+  line-height: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
@@ -144,6 +143,7 @@ export default {
   width: 320px;
   color: var(--color);
   text-align: left;
+  line-height: 1.8em;
 }
 
 @media screen and (max-width: 768px) {

@@ -63,6 +63,11 @@ footer {
   margin-bottom: 10px;
 }
 
+.languages {
+  display: inline-block;
+  margin: 0 4px;
+}
+
 .language-selector {
   text-align: center;
   margin: 30px 0;
