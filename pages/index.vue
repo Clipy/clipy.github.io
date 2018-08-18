@@ -23,6 +23,7 @@
       blueColor
     />
     <open-source-section/>
+    <special-thanks-section/>
     <section class="container">
       <div>
         {{ $t('welcome') }}
@@ -57,6 +58,7 @@ import ClipyHeader from '~/components/header/ClipyHeader.vue'
 import ClipyTop from '~/components/ClipyTop.vue'
 import FeatureSection from '~/components/FeatureSection.vue'
 import OpenSourceSection from '~/components/OpenSourceSection.vue'
+import SpecialThanksSection from '~/components/SpecialThanksSection.vue'
 
 export default {
   components: {
@@ -64,6 +66,7 @@ export default {
     ClipyTop,
     FeatureSection,
     OpenSourceSection,
+    SpecialThanksSection,
   }
 }
 </script>
