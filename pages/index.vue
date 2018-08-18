@@ -24,32 +24,7 @@
     />
     <open-source-section/>
     <special-thanks-section/>
-    <section class="container">
-      <div>
-        {{ $t('welcome') }}
-        <nuxt-link
-        v-for="locale in $i18n.locales"
-        v-if="locale.code !== $i18n.locale"
-        :key="locale.code"
-        :to="switchLocalePath(locale.code)"><span class="languages">{{ locale.name }}</span></nuxt-link>
-        <h1 class="title">
-          clipy.github.io
-        </h1>
-        <h2 class="subtitle">
-          Clipy site
-        </h2>
-        <div class="links">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            class="button--green">Documentation</a>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            class="button--grey">GitHub</a>
-        </div>
-      </div>
-    </section>
+    <clipy-footer/>
   </div>
 </template>
 
@@ -59,6 +34,7 @@ import ClipyTop from '~/components/ClipyTop.vue'
 import FeatureSection from '~/components/FeatureSection.vue'
 import OpenSourceSection from '~/components/OpenSourceSection.vue'
 import SpecialThanksSection from '~/components/SpecialThanksSection.vue'
+import ClipyFooter from '~/components/ClipyFooter.vue'
 
 export default {
   components: {
@@ -67,6 +43,7 @@ export default {
     FeatureSection,
     OpenSourceSection,
     SpecialThanksSection,
+    ClipyFooter,
   }
 }
 </script>

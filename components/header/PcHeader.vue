@@ -72,6 +72,10 @@ export default {
   flex-shrink: 2;
 }
 
+.sns-buttons .facebook {
+  top: -3px;
+}
+
 .pc-header-download-button {
   margin-top: -10px;
   margin-left: 8px;
