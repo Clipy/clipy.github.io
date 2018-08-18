@@ -22,6 +22,7 @@
       mainImageUrl="/images/screenshot-shortcut.png"
       blueColor
     />
+    <open-source-section/>
     <section class="container">
       <div>
         {{ $t('welcome') }}
@@ -55,12 +56,14 @@
 import ClipyHeader from '~/components/header/ClipyHeader.vue'
 import ClipyTop from '~/components/ClipyTop.vue'
 import FeatureSection from '~/components/FeatureSection.vue'
+import OpenSourceSection from '~/components/OpenSourceSection.vue'
 
 export default {
   components: {
     ClipyHeader,
     ClipyTop,
     FeatureSection,
+    OpenSourceSection,
   }
 }
 </script>
