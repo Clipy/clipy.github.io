@@ -66,7 +66,7 @@
   display: block;
 }
 
-.social-buttons .facebook {
+.social-container .facebook {
   top: -3px;
 }
 
