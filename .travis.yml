@@ -23,7 +23,7 @@ deploy:
   github-token: $GITHUB_ACCESS_TOKEN
   target-branch: gh-pages
   local-dir: dist
-  fqdn: clipy-app.com
+  fqdn: clipy-dev.koukilab.com
   on:
     branch: master
 
