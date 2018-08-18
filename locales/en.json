@@ -1,0 +1,41 @@
+{
+  "welcome": "Welcome",
+  "header": {
+    "navigation": {
+      "history": "コピー履歴",
+      "snippet": "スニペット",
+      "shortcut": "自由に呼び出し",
+      "open-source": "オープンソース"
+    }
+  },
+  "top": {
+    "description": "クリップボード拡張・<br>スニペット機能を搭載"
+  },
+  "history": {
+    "title": "コピーをクリップボードに履歴保存",
+    "description": "コピーしたテキスト、画像などを履歴としてクリップボードに保存する事が出来ます。ペーストしたい場所にいつでも呼び出して利用出来ます。"
+  },
+  "snippet": {
+    "title": "スニペットを設定",
+    "description": "保存しておきたい定型文、テンプレートを管理、編集が出来ます。よく使う定型文を必要な時に呼び出し、利用出来ます。"
+  },
+  "shortcut": {
+    "title": "ショートカットで自由に呼び出し",
+    "description": "メインメニュー、履歴メニュー、スニペットメニューなどをショートカットキーを各々に設定する事で利用したい時にいつでも呼び出す事が出来ます。"
+  },
+  "open-source": {
+    "title": "オープンソース",
+    "description": "Clipyはオープンソースで公開されています。バグや不具合、要望等ありましたら、Issue、PullRequestなどお待ちしています！日本語でも大丈夫です！"
+  },
+  "special-thanks": {
+    "title": "スペシャルサンクス",
+    "description": "Clipmenuをオープンソースとして公開していただき<a href=\"https://github.com/naotaka\" target=\"_blank\" rel=\"noopener\">@naotaka氏</a>に感謝いたします。このコードがなければリメイクという形で公開はありえませんでした。現状機能が被ってしまっていますが、独自機能を追加してさらなる機能向上を目指していきます。本当にありがとうございました。"
+  },
+  "button": {
+    "download": {
+      "title": "Download"
+    }
+  },
+  "support-os": "Mac 版 (OS X 10.9以降)"
+}
+
