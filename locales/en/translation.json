@@ -1,0 +1,37 @@
+{
+  "app": {
+    "application-description": "macOS Snippet App",
+    "application-condition": "macOS 10.10 or later"
+  },
+  "function": {
+    "title": "Main Functions",
+    "function-content": {
+      "1": "It is a clipboard extension application that supports multiple formats such as plain text and images.",
+      "2": "You can freely call up the menu with the shortcut key, and you can refer to the clipboard history at any time.",
+      "3": "Also, by registering a fixed phrase as a snippet, you can paste the fixed phrase at any time."
+    }
+  },
+  "opensource": {
+    "title": "Open Source",
+    "help": "Clipy is open source. If you have any bugs, bugs, requests, etc,",
+    "waiting": "We are waiting for you! Japanese is fine too!"
+  },
+  "img": {
+    "screenshots": {
+      "1": "img/screenshots/en/1.png",
+      "2": "img/screenshots/en/2.png",
+      "3": "img/screenshots/en/3.png"
+    },
+    "thumbnails": {
+      "1": "img/thumbnails/en/thumbnail1.png",
+      "2": "img/thumbnails/en/thumbnail2.png",
+      "3": "img/thumbnails/en/thumbnail3.png"
+    }
+  },
+  "thanks": {
+    "title": "Special thanks",
+    "clipmenu": "Clipmenu Is released as open source",
+    "naotaka": "Thank you. Without this code, it wouldn't have been possible to publish it in the form of a remake.",
+    "context": "The current functions have been covered, but we will aim to further improve the functions by adding unique functions. I'm really thankful to you."
+  }
+}

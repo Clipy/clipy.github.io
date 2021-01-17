@@ -21,6 +21,31 @@ section > div , footer > div{
 	font-weight: normal;
 	padding: 48px 0px 58px;
 }
+/***** lang *****/
+#change-lang{
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+}
+#change-lang > label{
+	font-size: 13px;
+}
+
+#change-lang > select {
+	max-width: 100%;
+	height: 25px;
+	float: right;
+	margin-left: 5px;
+	padding: 0px 24px;
+	font-size: 13px;
+	line-height: 1.75;
+	color: #333;
+	background:none;
+	border: 1px solid #379ad9;
+	-ms-word-break: normal;
+	word-break: normal;
+}
 
 /***** application *****/
 #application > div{
@@ -176,14 +201,10 @@ section > div , footer > div{
 .dots{
 	display: none !important;
 }
-#thumbnail1{
-	background-image: url( '../img/thumbnail1.png' );
-}
-#thumbnail2{
-	background-image: url( '../img/thumbnail2.png' );
-}
-#thumbnail3{
-	background-image: url( '../img/thumbnail3.png' );
+.thumbnail{
+	width: 98px;
+	height: 78px;
+	object-fit: cover;
 }
 
 /***** function *****/

@@ -1,0 +1,37 @@
+{
+  "app": {
+    "application-description": "macOS スニペットアプリ",
+    "application-condition": "macOS 10.10以降"
+  },
+  "function": {
+    "title": "主な機能",
+    "function-content": {
+      "1": "プレーンテキストや画像といった複数の形式に対応したクリップボード拡張アプリです。",
+      "2": "ショートカットキーで自由にメニューを呼び出すことができ、いつでもクリップボードの履歴を参照できます。",
+      "3": "また、スニペットとして定型文を登録しておくことで、いつでも定型文をペーストできます。"
+    }
+  },
+  "opensource": {
+    "title": "オープンソース",
+    "help": "Clipyはオープンソースで公開されています。バグや不具合、要望等ありましたら、",
+    "waiting": "などお待ちしています！日本語でも大丈夫です！"
+  },
+  "img": {
+    "screenshots": {
+      "1": "img/screenshots/ja/1.png",
+      "2": "img/screenshots/ja/2.png",
+      "3": "img/screenshots/ja/3.png"
+    },
+    "thumbnails": {
+      "1": "img/thumbnails/ja/thumbnail1.png",
+      "2": "img/thumbnails/ja/thumbnail2.png",
+      "3": "img/thumbnails/ja/thumbnail3.png"
+    }
+  },
+  "thanks": {
+    "title": "スペシャルサンクス",
+    "clipmenu": "Clipmenuをオープンソースとして公開していただき",
+    "naotaka": "に感謝いたします。このコードがなければリメイクという形で公開はありえませんでした。",
+    "context": "現状機能が被ってしまっていますが、独自機能を追加してさらなる機能向上を目指していきます。本当にありがとうございました。"
+  }
+}
