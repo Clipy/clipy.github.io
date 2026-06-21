@@ -1,52 +1,76 @@
-<section>
-  <h3>Clipy 1.3.0</h3>
-  <p>
-    <strong>注意:</strong>
-    Clipy 1.3.0 は約8年ぶりの正式アップデートです。
-    今回のアップデートでは、今後も開発を継続できるようにするため、内部データベースの移行を含む大きな変更を行っています。
-    既存データの移行はできる限り自動で行われますが、環境によっては失敗する可能性があります。
-    アップデートを行う前に、スニペットなどの重要なデータを必ずエクスポートしてください。
-  </p>
-  <p>
-    まずは現在の macOS 環境で最低限安心して使える状態にすることを目的として、Apple Silicon 対応や Universal Binary 対応、内部構造の更新を行っています。
-    今後も改善や不具合修正を継続していく予定です。
-  </p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clipy 1.3.0</title>
+  <link rel="stylesheet" href="../css/releasenotes.css" />
+</head>
+<body>
+<main>
+  <article>
+    <header>
+      <h1>Clipy 1.3.0</h1>
+      <p>約8年ぶりの正式アップデートです。</p>
+    </header>
 
-  <h4>主な変更</h4>
-  <ul>
-    <li>macOS 13 Ventura 以降に対応しました。</li>
-    <li>Apple Silicon に対応しました。</li>
-    <li>設定の保存処理とウィンドウ表示まわりの挙動を改善しました。</li>
-    <li>ペーストボードの監視間隔を調整し、コピー動作の安定性を改善しました。</li>
-    <li>パスワードマネージャー等の機密情報の取り扱いを改善しました。</li>
-  </ul>
+    <p class="important">
+      このアップデートでは、今後も開発を継続できるようにするため、内部データベースの移行を含む大きな変更を行っています。
+      既存データの移行はできる限り自動で行われますが、環境によっては失敗する可能性があります。
+      <br />
+      アップデートを行う前に、スニペットなどの重要なデータを必ずエクスポートしてください。
+    </p>
 
-  <h4>バグ修正</h4>
-  <ul>
-    <li>スニペットのインポート時に空白が削除される問題を修正しました。</li>
-    <li>ログイン項目に関する通知が繰り返し表示される問題を修正しました。</li>
-    <li>不要なアクセシビリティ許可ダイアログが表示される問題を修正しました。</li>
-    <li>サムネイルのアスペクト比の扱いを修正しました。</li>
-    <li>ダークモード時にレイアウトが崩れる問題を修正しました。</li>
-    <li>インラインメニューの番号表示を修正しました。</li>
-  </ul>
+    <p>
+      まずは現在の macOS 環境で最低限安心して使える状態にすることを目的として、Apple Silicon 対応や Universal Binary 対応、内部構造の更新を行っています。
+      今後も改善や不具合修正を継続していく予定です。
+    </p>
 
-  <h4>ユーザーの皆さまへ</h4>
-  <p>
-    Clipy を長らく使用してくださりありがとうございます。
-    約8年ぶりのアップデートとなってしまいましたが、今後も継続的に開発をしていく予定です。
-    ダークモードのサポートやその他機能の改善も行っていく予定ですので、今後のアップデートにご期待ください。
-  </p>
-</section>
-<hr size="1">
-<section>
-  アップデート後のバグや質問・要望等がありましたら以下からご連絡ください。<br>
-  Twitter <a href="https://twitter.com/econa77">@econa77</a> or <a href="https://twitter.com/clipyapp">@clipyapp</a><br>
-  GitHub <a href="https://github.com/Clipy/Clipy">Clipy</a><br><br>
+    <section>
+      <h2>主な変更</h2>
+      <ul>
+        <li>macOS 13 Ventura 以降に対応しました。</li>
+        <li>Apple Silicon に対応しました。</li>
+        <li>設定の保存処理とウィンドウ表示まわりの挙動を改善しました。</li>
+        <li>ペーストボードの監視間隔を調整し、コピー動作の安定性を改善しました。</li>
+        <li>パスワードマネージャー等の機密情報の取り扱いを改善しました。</li>
+      </ul>
+    </section>
 
-  Clipy では今後の継続的な開発のため、寄付を受け付けています。<br>
-  もしよろしければご協力ください。<br>
-  <a href="https://opencollective.com/clipy">Open Collective</a><br>
-  <a href="https://github.com/sponsors/Econa77">Econa77 の GitHub Sponsors</a>
-</section>
-<hr size="1">
+    <section>
+      <h2>バグ修正</h2>
+      <ul>
+        <li>スニペットのインポート時に空白が削除される問題を修正しました。</li>
+        <li>ログイン項目に関する通知が繰り返し表示される問題を修正しました。</li>
+        <li>不要なアクセシビリティ許可ダイアログが表示される問題を修正しました。</li>
+        <li>サムネイルのアスペクト比の扱いを修正しました。</li>
+        <li>ダークモード時にレイアウトが崩れる問題を修正しました。</li>
+        <li>インラインメニューの番号表示を修正しました。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>ユーザーの皆さまへ</h2>
+      <p>
+        Clipy を長らく使用してくださりありがとうございます。
+        約8年ぶりのアップデートとなってしまいましたが、今後も継続的に開発をしていく予定です。
+        ダークモードのサポートやその他機能の改善も行っていく予定ですので、今後のアップデートにご期待ください。
+      </p>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      アップデート後のバグや質問・要望等がありましたら、Twitter
+      <a href="https://twitter.com/econa77">@econa77</a> /
+      <a href="https://twitter.com/clipyapp">@clipyapp</a> または
+      <a href="https://github.com/Clipy/Clipy">GitHub</a> からご連絡ください。
+    </p>
+    <p>
+      Clipy では今後の継続的な開発のため、寄付を受け付けています。
+      <a href="https://opencollective.com/clipy">Open Collective</a> または
+      <a href="https://github.com/sponsors/Econa77">Econa77 の GitHub Sponsors</a> よりご協力いただけます。
+    </p>
+  </footer>
+</main>
+</body>
+</html>

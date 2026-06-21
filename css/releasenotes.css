@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  color: light-dark(#2c2c2e, #f2f2f7);
+  background: light-dark(#ffffff, #1c1c1e);
+  font: 14px -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+}
+
+main p,
+main li {
+  line-height: 1.6;
+}
+
+main p {
+  margin: 0 0 0.75em;
+}
+
+main ul {
+  margin: 0.4em 0 0 1.35em;
+  padding: 0;
+}
+
+main li {
+  margin: 0.2em 0;
+}
+
+main a {
+  color: #3999D8;
+  text-decoration: none;
+}
+
+article > header {
+  margin: 0 0 1em;
+}
+
+article > header h1 {
+  margin: 0;
+  color: light-dark(#1d1d1f, #ffffff);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+article > header p {
+  margin: 0.2em 0 0;
+  color: light-dark(#6e6e73, #aeaeb2);
+  font-size: 12px;
+}
+
+article section {
+  margin: 1em 0 0;
+  padding: 0.85em 0 0;
+  border-top: 1px solid light-dark(#e8e8ed, #3a3a3c);
+}
+
+article h2 {
+  margin: 0 0 0.4em;
+  color: light-dark(#1d1d1f, #ffffff);
+  font-size: 100%;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+p.important {
+  margin: 0 0 1em;
+  padding: 0.75em 0.9em;
+  color: light-dark(#5c2f2b, #ffd8d2);
+  background: light-dark(#fff7f6, #3a2928);
+  border: 1px solid light-dark(#e3aaa4, #a97670);
+  border-radius: 0.6em;
+}
+
+footer {
+  margin: 1.2em 0 0;
+  padding: 0.85em 0 0;
+  color: light-dark(#4d4d50, #c7c7cc);
+  border-top: 1px solid light-dark(#e8e8ed, #3a3a3c);
+  font-size: 12px;
+}
