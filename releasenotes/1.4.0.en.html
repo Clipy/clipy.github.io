@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clipy 1.4.0</title>
+  <link rel="stylesheet" href="../css/releasenotes.css" />
+</head>
+<body>
+<main>
+  <article>
+    <header>
+      <h1>Clipy 1.4.0</h1>
+      <p>Redesigned Settings and improved clipboard history management and snippet access.</p>
+    </header>
+
+    <p class="important">
+      Updating from a version earlier than 1.3.0 requires an internal database migration.
+      Existing data will be migrated automatically where possible, but migration may fail depending on your environment.
+      <br />
+      Please export important data, such as snippets, before updating.
+    </p>
+
+    <section>
+      <h2>Enhancements</h2>
+      <ul>
+        <li>Redesigned Settings and added dark mode support.</li>
+        <li>Added a dedicated shortcut to open Settings even when the menu bar icon is hidden.</li>
+        <li>Added support for HTML format.</li>
+        <li>Added options to automatically clear history when Clipy quits or at a specified interval.</li>
+        <li>Added an option to exclude content received through Universal Clipboard from history.</li>
+        <li>Added a global shortcut to open the snippet editor.</li>
+        <li>Added an option to show snippets above history.</li>
+        <li>Automatically selected the first item when opening the menu to make keyboard navigation easier.</li>
+        <li>Improved menu title and number formatting.</li>
+        <li>Stopped saving text containing only whitespace or line breaks to history.</li>
+        <li>Reclaimed unused database space after manually clearing history.</li>
+        <li>Added Ukrainian localization.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bug Fixes</h2>
+      <ul>
+        <li>Fixed pasting not working when the paste shortcut was changed in macOS settings.</li>
+        <li>Fixed screenshots not being captured in history when using a custom save location.</li>
+        <li>Fixed history pruning not following the current sort preferences when the history limit was exceeded.</li>
+        <li>Fixed problems when reordering snippet folders by dragging.</li>
+        <li>Fixed incorrect history submenu ranges when numbering starts at 0.</li>
+        <li>Fixed problems when adding snippets on macOS 13.</li>
+      </ul>
+    </section>
+  </article>
+
+  <footer>
+    <p>
+      If you find bugs or have questions or requests after updating, please contact us on Twitter
+      <a href="https://twitter.com/econa77">@econa77</a> /
+      <a href="https://twitter.com/clipyapp">@clipyapp</a> or
+      <a href="https://github.com/Clipy/Clipy">GitHub</a>.
+    </p>
+    <p>
+      Clipy accepts donations to support ongoing development.
+      You can support the project through
+      <a href="https://opencollective.com/clipy">Open Collective</a> or
+      <a href="https://github.com/sponsors/Econa77">Econa77 GitHub Sponsors</a>.
+    </p>
+  </footer>
+</main>
+</body>
+</html>
