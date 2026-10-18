@@ -3,6 +3,13 @@
 
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8"/>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JLZR59367H"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-JLZR59367H');
+	</script>
 	<meta name="description" content="Clipboard extension app for macOS"/>
 	<meta name="robots"      content="noindex"/>
 
@@ -24,16 +31,6 @@
 	<script type="text/javascript" src="./js/unslider.min.js" ></script>
 	<script type="text/javascript" src="./js/main.js?v=98829ee83f9b" ></script>
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-64663608-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
 
 </head>
 
@@ -47,7 +44,7 @@
 				<div id="application-contents" >
 					<img id="application-name" src="./img/clipy-name.png" />
 					<p id="application-description" class="text-color" >macOS スニペットアプリ</p>
-					<a id="application-download" href="https://github.com/Clipy/Clipy/releases/download/1.4.0/Clipy_1.4.0.dmg" onclick="ga('send', 'event', 'Downloads', 'click', 'v1.4.0');">Download</a>
+					<a id="application-download" href="https://github.com/Clipy/Clipy/releases/download/1.4.0/Clipy_1.4.0.dmg" onclick="gtag('event', 'download_click', {link_url: this.href, file_name: this.pathname.split('/').pop()});">Download</a>
 					<!--a id="application-download" >Download</a-->
 					<p id="application-condition" class="text-color" >macOS 13.0以降</p>
 				</div>
