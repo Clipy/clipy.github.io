@@ -1,0 +1,175 @@
+---
+pagination:
+  data: locales
+  size: 1
+  alias: localeCode
+permalink: "{% if localeCode != site.defaultLocale %}{{ localeCode }}/{% endif %}index.html"
+eleventyExcludeFromCollections: true
+---
+{% set locale = locales[localeCode] %}
+{% set canonicalUrl = '/' if localeCode == site.defaultLocale else page.url %}
+{% set alternates = canonicalUrl | locale_links %}
+{% macro link(url, label) -%}
+<a href="{{ url }}" target="_blank">{{ label }}</a>
+{%- endmacro -%}
+{% macro scriptJson(value) -%}
+{{ value | dump | replace('<', '\\u003c') | safe }}
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+<head prefix="og: https://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+
+		(function () {
+		    'use strict';
+{% if page.url == '/' %}
+		    var defaultLocale = {{ scriptJson(site.defaultLocale) }}.toLowerCase();
+		    var routes = {};
+		    routes[defaultLocale] = '/';
+		    var alternates = {{ scriptJson(alternates) }};
+		    for (var j = 0; j < alternates.length; j++) {
+		        routes[alternates[j].lang.toLowerCase()] = alternates[j].url;
+		    }
+		    var preferences = navigator.languages && navigator.languages.length
+		        ? navigator.languages : [navigator.language || defaultLocale];
+		    var language = null;
+		    for (var i = 0; i < preferences.length && !language; i++) {
+		        var candidate = String(preferences[i]).toLowerCase();
+		        while (candidate) {
+		            if (Object.prototype.hasOwnProperty.call(routes, candidate)) {
+		                language = candidate;
+		                break;
+		            }
+		            var separator = candidate.lastIndexOf('-');
+		            candidate = separator === -1 ? '' : candidate.slice(0, separator);
+		        }
+		    }
+		    if (language && language !== defaultLocale) {
+		        window.location.replace(routes[language] + window.location.search + window.location.hash);
+		        return;
+		    }
+{% endif %}
+		    gtag('js', new Date());
+		    gtag('config', {{ scriptJson(site.gaId) }});
+		}());
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+	<meta name="description" content="{{ locale.description }}"/>
+	<meta name="robots" content="index,follow"/>
+
+	<title>{{ locale.title }}</title>
+
+	<meta property="og:site_name" content="{{ site.name }}"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="{{ canonicalUrl | htmlBaseUrl(site.url) }}"/>
+	<meta property="og:title" content="{{ locale.title }}"/>
+	<meta property="og:description" content="{{ locale.description }}"/>
+	<meta property="og:image" content="{{ '/img/common/app-icon.png' | htmlBaseUrl(site.url) }}"/>
+	<meta property="og:image:type" content="image/png"/>
+	<meta property="og:image:width" content="512"/>
+	<meta property="og:image:height" content="512"/>
+	<meta property="og:image:alt" content="{{ locale.imageAlt.appIcon }}"/>
+{% for alternate in alternates %}
+	<meta property="og:locale:alternate" content="{{ locales[alternate.lang].ogLocale }}"/>
+{% endfor %}
+	<meta property="og:locale" content="{{ locale.ogLocale }}"/>
+
+	<link rel="canonical" href="{{ canonicalUrl | htmlBaseUrl(site.url) }}"/>
+	<link rel="alternate" hreflang="{{ page.lang }}" href="{{ canonicalUrl | htmlBaseUrl(site.url) }}"/>
+{% for alternate in alternates %}
+	<link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url | htmlBaseUrl(site.url) }}"/>
+{% endfor %}
+	<link rel="alternate" hreflang="x-default" href="{{ '/' | htmlBaseUrl(site.url) }}"/>
+	<link rel="shortcut icon" href="/favicon.png" type="image/png" sizes="16x16"/>
+	<link rel="shortcut icon" href="/favicon@2x.png" type="image/png" sizes="32x32"/>
+	<link rel="stylesheet" href="{% getBundleFileUrl 'css' %}"/>
+
+	<script defer src="{% getBundleFileUrl 'js' %}"></script>
+</head>
+
+	<body>
+		<a href="{{ site.repositoryUrl }}"><img eleventy:ignore loading="lazy" decoding="async" width="149" height="149" style="position: absolute; top: 0; right: 0; border: 0;" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png" class="attachment-full size-full" alt="{{ locale.imageAlt.forkRibbon }}"></a>
+
+		<section id="application">
+			<div>
+				<img alt="{{ locale.imageAlt.application }}" id="application-image" src="/img/common/app-illustration.png"/>
+				<div id="application-contents">
+					<img alt="{{ locale.imageAlt.wordmark }}" id="application-name" src="/img/common/wordmark.png"/>
+					<p id="application-description" class="text-color">{{ locale.application.description }}</p>
+					<a id="application-download" href="{{ release.downloadUrl }}" onclick="gtag('event', 'download_click', {link_url: this.href, file_name: this.pathname.split('/').pop()});">{{ locale.application.download }}</a>
+					<p id="application-condition" class="text-color">{{ locale.application.requirements | replace('{minimumMacOS}', release.minimumMacOS) }}</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="screenshots">
+			<div>
+				<div id="screenshots-contents" class="swiper">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><img class="screenshot" alt="{{ locale.screenshots.clipboardHistory.alt }}" src="{{ locale.screenshots.clipboardHistory.src }}"/></li>
+						<li class="swiper-slide"><img class="screenshot" alt="{{ locale.screenshots.snippets.alt }}" src="{{ locale.screenshots.snippets.src }}"/></li>
+					</ul>
+				</div>
+				<div id="screenshots-controls">
+					<button id="control-left" class="control-button" type="button"></button>
+					<div id="screenshots-thumbnails" class="swiper">
+						<div class="swiper-wrapper">
+							<button id="thumbnail1" class="swiper-slide control-position" type="button" aria-label="{{ locale.screenshots.clipboardHistory.alt }}"><img src="{{ locale.screenshots.clipboardHistory.src }}" alt=""/></button>
+							<button id="thumbnail2" class="swiper-slide control-position" type="button" aria-label="{{ locale.screenshots.snippets.alt }}"><img src="{{ locale.screenshots.snippets.src }}" alt=""/></button>
+						</div>
+					</div>
+					<button id="control-right" class="control-button" type="button"></button>
+				</div>
+			</div>
+		</section>
+
+		<section id="function">
+			<div>
+				<h1 class="title">{{ locale.features.title }}</h1>
+				<img alt="" id="function-image" src="/img/common/features.png"/>
+				<ul id="function-contents">
+{% for item in locale.features.items %}
+					<li class="function-list text-color">{{ item }}</li>
+{% endfor %}
+				</ul>
+			</div>
+		</section>
+
+		<section id="opensource">
+			<div>
+				<h1 class="title">{{ locale.openSource.title }}</h1>
+				<p id="opensource-detail" class="text-color">{{ locale.openSource.description | escape | replace('{issues}', link(site.issuesUrl, locale.openSource.issuesLabel)) | replace('{pullRequests}', link(site.pullRequestsUrl, locale.openSource.pullRequestsLabel)) }}</p>
+				<a id="opensource-link" href="{{ site.repositoryUrl }}"><img src="/img/common/github.png" alt="GitHub" width="144" height="50"/></a>
+			</div>
+		</section>
+
+		<section id="thanks">
+			<div>
+				<h1 class="title">{{ locale.thanks.title }}</h1>
+				<div id="thanks-details" class="text-color">
+					<p>{{ locale.thanks.firstParagraph | escape | replace('{author}', link(site.authorUrl, locale.thanks.authorLabel)) }}</p>
+					<p>{{ locale.thanks.secondParagraph }}</p>
+				</div>
+				<img alt="{{ locale.imageAlt.clipMenu }}" id="thanks-image" src="/img/common/clipmenu.png"/>
+			</div>
+		</section>
+
+		<footer>
+			<div>
+				<div id="social">
+					<iframe src="https://ghbtns.com/github-btn.html?user=Clipy&amp;repo=Clipy&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="150" height="20" title="{{ locale.githubTitle }}"></iframe>
+				</div>
+				<p id="copyright">&copy;{{ site.copyright }}</p>
+			</div>
+		</footer>
+	</body>
+</html>
+{% css %}{% renderFile './css/common.css', {}, 'html' %}{% endcss %}
+{% css %}{% renderFile './node_modules/swiper/swiper-bundle.min.css', {}, 'html' %}{% endcss %}
+{% css %}{% renderFile './css/main.css', {}, 'html' %}{% endcss %}
+{% js %}{% renderFile './node_modules/swiper/swiper-bundle.min.js', {}, 'html' %}{% endjs %}
+{% js %}{% renderFile './js/slider.js', {}, 'html' %}{% endjs %}

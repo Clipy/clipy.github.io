@@ -1,0 +1,48 @@
+{
+  "title": "Clipy - Clipboard Manager for macOS",
+  "description": "A free, open-source clipboard manager for macOS. Access your clipboard history and quickly paste frequently used text with snippets.",
+  "ogLocale": "en_US",
+  "imageAlt": {
+    "appIcon": "Clipy app icon",
+    "application": "Clipy",
+    "wordmark": "Clipy",
+    "forkRibbon": "Fork me on GitHub",
+    "clipMenu": "ClipMenu"
+  },
+  "application": {
+    "description": "Clipboard manager for macOS",
+    "download": "Download",
+    "requirements": "macOS {minimumMacOS} or later"
+  },
+  "screenshots": {
+    "clipboardHistory": {
+      "src": "/img/screenshots/en/clipboard-history.png",
+      "alt": "Clipboard history"
+    },
+    "snippets": {
+      "src": "/img/screenshots/en/snippets.png",
+      "alt": "Snippet menu"
+    }
+  },
+  "features": {
+    "title": "Features",
+    "items": [
+      "Extend your clipboard with support for plain text, images, and other formats.",
+      "Open the menu with a keyboard shortcut to access your clipboard history whenever you need it.",
+      "Save frequently used text as snippets and paste it at any time."
+    ]
+  },
+  "openSource": {
+    "title": "Open Source",
+    "description": "Clipy is open source. Bug reports, feature requests, and contributions are welcome through {issues} or {pullRequests}.",
+    "issuesLabel": "issues",
+    "pullRequestsLabel": "pull requests"
+  },
+  "thanks": {
+    "title": "Special Thanks",
+    "firstParagraph": "Thank you to {author} for releasing ClipMenu as open source. Without that code, this remake would not have been possible.",
+    "secondParagraph": "Although Clipy currently shares many features with ClipMenu, we aim to keep improving it with features of our own. Thank you for making this possible.",
+    "authorLabel": "@naotaka"
+  },
+  "githubTitle": "GitHub"
+}

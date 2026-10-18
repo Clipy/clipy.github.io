@@ -1,0 +1,48 @@
+{
+  "title": "Clipy - macOS用クリップボード拡張アプリ",
+  "description": "Clipyは、macOS向けの無料・オープンソースのクリップボード拡張アプリです。コピー履歴の管理やスニペットで、よく使う文章をすばやく貼り付けられます。",
+  "ogLocale": "ja_JP",
+  "imageAlt": {
+    "appIcon": "Clipyのアプリアイコン",
+    "application": "Clipy",
+    "wordmark": "Clipy",
+    "forkRibbon": "Fork me on GitHub",
+    "clipMenu": "ClipMenu"
+  },
+  "application": {
+    "description": "macOS用クリップボード拡張アプリ",
+    "download": "Download",
+    "requirements": "macOS {minimumMacOS}以降"
+  },
+  "screenshots": {
+    "clipboardHistory": {
+      "src": "/img/screenshots/ja/clipboard-history.png",
+      "alt": "クリップボード履歴"
+    },
+    "snippets": {
+      "src": "/img/screenshots/ja/snippets.png",
+      "alt": "スニペットメニュー"
+    }
+  },
+  "features": {
+    "title": "主な機能",
+    "items": [
+      "プレーンテキストや画像といった複数の形式に対応したクリップボード拡張アプリです。",
+      "ショートカットキーで自由にメニューを呼び出すことができ、いつでもクリップボードの履歴を参照できます。",
+      "また、スニペットとして定型文を登録しておくことで、いつでも定型文をペーストできます。"
+    ]
+  },
+  "openSource": {
+    "title": "オープンソース",
+    "description": "Clipyはオープンソースで公開されています。バグや不具合、要望等ありましたら、{issues}、{pullRequests}などお待ちしています！日本語でも大丈夫です！",
+    "issuesLabel": "Issue",
+    "pullRequestsLabel": "PullRequest"
+  },
+  "thanks": {
+    "title": "スペシャルサンクス",
+    "firstParagraph": "Clipmenuをオープンソースとして公開していただき{author}に感謝いたします。このコードがなければリメイクという形で公開はありえませんでした。",
+    "secondParagraph": "現状機能が被ってしまっていますが、独自機能を追加してさらなる機能向上を目指していきます。本当にありがとうございました。",
+    "authorLabel": "@naotaka氏"
+  },
+  "githubTitle": "GitHub"
+}
