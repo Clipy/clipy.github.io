@@ -53,8 +53,6 @@ var moveSlide = function(){
 }
 
 var initialize = function(){
-	// facebook(document, 'script', 'facebook-jssdk');
-	twitter(document, 'script', 'twitter-wjs');
 	slider();
 	$('#control-on-left, #control-on-right').hover( show , hide );
 	$('#control-on-left').click( previousSlide );

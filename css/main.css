@@ -182,9 +182,6 @@ section > div , footer > div{
 #thumbnail2{
 	background-image: url( '../img/thumbnail2.png' );
 }
-#thumbnail3{
-	background-image: url( '../img/thumbnail3.png' );
-}
 
 /***** function *****/
 #function{
