@@ -1,0 +1,20 @@
+{
+  "name": "clipy-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "i18n:check": "i18n-check --locales src/_data/locales --source en",
+    "prebuild": "npm run i18n:check && node scripts/clean.js",
+    "build": "eleventy"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7",
+    "@11ty/eleventy-img": "7.0.0",
+    "@lingual/i18n-check": "0.9.5",
+    "swiper": "14.3.0"
+  }
+}
