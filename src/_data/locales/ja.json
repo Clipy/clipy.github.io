@@ -16,12 +16,10 @@
   },
   "screenshots": {
     "clipboardHistory": {
-      "src": "/img/screenshots/ja/clipboard-history.png",
       "alt": "クリップボード履歴"
     },
     "snippets": {
-      "src": "/img/screenshots/ja/snippets.png",
-      "alt": "スニペットメニュー"
+      "alt": "スニペットエディター"
     }
   },
   "features": {

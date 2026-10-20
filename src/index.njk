@@ -7,6 +7,8 @@ permalink: "{% if localeCode != site.defaultLocale %}{{ localeCode }}/{% endif %
 eleventyExcludeFromCollections: true
 ---
 {% set locale = locales[localeCode] %}
+{% set clipboardHistorySrc = screenshots.clipboardHistory[localeCode] | default(screenshots.clipboardHistory.en) %}
+{% set snippetsSrc = screenshots.snippets[localeCode] | default(screenshots.snippets.en) %}
 {% set canonicalUrl = '/' if localeCode == site.defaultLocale else page.url %}
 {% set alternates = canonicalUrl | locale_links %}
 {% macro link(url, label) -%}
@@ -110,16 +112,16 @@ eleventyExcludeFromCollections: true
 			<div>
 				<div id="screenshots-contents" class="swiper">
 					<ul class="swiper-wrapper">
-						<li class="swiper-slide"><img class="screenshot" alt="{{ locale.screenshots.clipboardHistory.alt }}" src="{{ locale.screenshots.clipboardHistory.src }}"/></li>
-						<li class="swiper-slide"><img class="screenshot" alt="{{ locale.screenshots.snippets.alt }}" src="{{ locale.screenshots.snippets.src }}"/></li>
+						<li class="swiper-slide"><img class="screenshot" alt="{{ locale.screenshots.clipboardHistory.alt }}" src="{{ clipboardHistorySrc }}"/></li>
+						<li class="swiper-slide"><img class="screenshot" alt="{{ locale.screenshots.snippets.alt }}" src="{{ snippetsSrc }}"/></li>
 					</ul>
 				</div>
 				<div id="screenshots-controls">
 					<button id="control-left" class="control-button" type="button"></button>
 					<div id="screenshots-thumbnails" class="swiper">
 						<div class="swiper-wrapper">
-							<button id="thumbnail1" class="swiper-slide control-position" type="button" aria-label="{{ locale.screenshots.clipboardHistory.alt }}"><img src="{{ locale.screenshots.clipboardHistory.src }}" alt=""/></button>
-							<button id="thumbnail2" class="swiper-slide control-position" type="button" aria-label="{{ locale.screenshots.snippets.alt }}"><img src="{{ locale.screenshots.snippets.src }}" alt=""/></button>
+							<button id="thumbnail1" class="swiper-slide control-position" type="button" aria-label="{{ locale.screenshots.clipboardHistory.alt }}"><img src="{{ clipboardHistorySrc }}" alt=""/></button>
+							<button id="thumbnail2" class="swiper-slide control-position" type="button" aria-label="{{ locale.screenshots.snippets.alt }}"><img src="{{ snippetsSrc }}" alt=""/></button>
 						</div>
 					</div>
 					<button id="control-right" class="control-button" type="button"></button>

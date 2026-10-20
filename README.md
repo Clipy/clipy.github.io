@@ -31,10 +31,9 @@ To add a language:
 2. Update `ogLocale` (for example, `fr_FR`) and translate the text. Keep all keys and the
    same JSON structure as the English file. Text is escaped when rendered;
    write plain text rather than HTML.
-3. Optionally add screenshots under `src/img/screenshots/<language>/` and update
-   the public `/img/screenshots/<language>/...` paths in the JSON. Existing image
-   paths can be kept until localized screenshots are ready.
-4. Preview the page, run the build above, and open a pull request.
+3. Preview the page, run the build above, and open a pull request. Screenshots
+   default to the shared English set, so adding a language only requires text
+   translations, including screenshot alt text and thumbnail labels.
 
 Keep placeholders such as `{minimumMacOS}`, `{issues}`, `{pullRequests}`, and
 `{author}` intact. They insert shared values or links, and can be moved within
@@ -71,6 +70,8 @@ that language; there is no language switcher.
   Google Analytics ID.
 - `src/_data/release.json`: website version, download URL, and minimum macOS
   version. Update this file once for all languages.
+- `src/_data/screenshots.json`: shared screenshot paths and optional overrides.
+  Each image falls back to its `en` path when the current language has no entry.
 - The bundled official `HtmlBasePlugin` creates absolute metadata URLs with
   `htmlBaseUrl`; page assets stay on the current host for local and preview builds.
 - `css/` and `js/`: shared styles and scripts. Eleventy's built-in `RenderPlugin`
@@ -83,8 +84,10 @@ that language; there is no language switcher.
   `@11ty/eleventy-img` HTML Transform processes local `<img>` elements automatically
   and generates content-hashed filenames under `img/`. Passthrough format preserves
   the original image bytes. Use public paths such as `/img/common/wordmark.png` in
-  the template and translation JSON; the plugin resolves them from `src/`.
+  the template and shared screenshot data; the plugin resolves them from `src/`.
   The externally hosted GitHub ribbon opts out with `eleventy:ignore`.
+- `src/img/common/clipboard-history.png` and `src/img/common/snippets.jpg`: the
+  default English screenshots shared by every language unless overridden.
 - `src/img/common/app-icon.png` and `src/favicon*.png`: the OGP image and favicons
   are copied unchanged to stable public URLs. HTML Transform handles `<img>` and
   `<picture>`, while metadata uses these ordinary static files.
@@ -92,6 +95,33 @@ that language; there is no language switcher.
 - `appcast.xml` and `releasenotes/`: app update feed and release notes. They are
   copied as static files; the website release settings are independent of the
   appcast.
+
+### Optional localized screenshots
+
+Japanese screenshots are provided in `src/img/screenshots/ja/` and selected through
+the shared screenshot metadata.
+
+Screenshot contributions are optional. To override an image, add it under
+`src/img/screenshots/<language>/` and register its public path for that language
+in `src/_data/screenshots.json`. For example, this overrides only the Japanese
+clipboard history image; all other languages and the snippets image keep using
+the shared English images:
+
+```json
+{
+  "clipboardHistory": {
+    "en": "/img/common/clipboard-history.png",
+    "ja": "/img/screenshots/ja/clipboard-history.png"
+  },
+  "snippets": {
+    "en": "/img/common/snippets.jpg"
+  }
+}
+```
+
+The template uses Nunjucks' built-in `default` filter for each image. Main slides
+and thumbnails always use the same selected source. No Eleventy configuration
+changes or additional plugins are needed.
 
 ## Dependency updates
 

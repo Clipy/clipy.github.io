@@ -16,12 +16,10 @@
   },
   "screenshots": {
     "clipboardHistory": {
-      "src": "/img/screenshots/en/clipboard-history.png",
       "alt": "Clipboard history"
     },
     "snippets": {
-      "src": "/img/screenshots/en/snippets.png",
-      "alt": "Snippet menu"
+      "alt": "Snippet editor"
     }
   },
   "features": {
