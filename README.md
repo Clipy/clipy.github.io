@@ -1,156 +1,89 @@
 # Clipy website
 
-The website at [clipy-app.com](https://clipy-app.com) is built with Eleventy,
-Nunjucks, and JSON. One HTML template generates every language. The published
-site contains static HTML, CSS, JavaScript, and images.
+Source for [clipy-app.com](https://clipy-app.com), built with Eleventy,
+Nunjucks, and JSON. All languages share one page template.
 
 ## Local development
 
-Use Node.js 24 (see `.nvmrc`), then run:
+Use Node.js 24 (see [`.nvmrc`](.nvmrc)), then run:
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open the local URL printed by Eleventy. To build and check the site:
+Open the local URL printed by Eleventy. Use `/en/` or `/ja/` to preview a
+specific language. The root page `/` selects a supported language based on the
+browser's preferences and displays English when JavaScript is disabled.
+
+Before opening a pull request, run:
 
 ```sh
 npm run build
 ```
 
-The generated site is in `_site/`. Do not commit that directory.
+This checks translations and builds the site into `_site/`. Generated files
+should not be committed.
 
 ## Translations
 
-To update an existing translation, edit its JSON file in `src/_data/locales/`.
+To update a translation, edit its JSON file in
+[`src/_data/locales/`](src/_data/locales/).
+
 To add a language:
 
-1. Copy `src/_data/locales/en.json` to a new file named with the language tag, such as
-   `src/_data/locales/fr.json`.
-2. Update `ogLocale` (for example, `fr_FR`) and translate the text. Keep all keys and the
-   same JSON structure as the English file. Text is escaped when rendered;
-   write plain text rather than HTML.
-3. Preview the page, run the build above, and open a pull request. Screenshots
-   default to the shared English set, so adding a language only requires text
-   translations, including screenshot alt text and thumbnail labels.
+1. Copy `src/_data/locales/en.json` to a file named with the language tag,
+   such as `src/_data/locales/fr.json`.
+2. Translate the text, including image descriptions, and update `ogLocale`
+   (for example, `fr_FR`). Keep the same keys and JSON structure as English.
+   Write plain text rather than HTML.
+3. Preview the new page at its language path, such as `/fr/`, and run
+   `npm run build` before opening a pull request.
+
+New languages are discovered automatically; no template or route changes are
+needed. Screenshots use the shared English images unless a localized version
+is provided, so screenshot contributions are optional.
 
 Keep placeholders such as `{minimumMacOS}`, `{issues}`, `{pullRequests}`, and
-`{author}` intact. They insert shared values or links, and can be moved within
-the translated sentence to match its grammar.
+`{author}` intact. They insert shared values or links and can be moved within
+a sentence to match the language's grammar. Let text wrap naturally rather
+than adding manual line breaks or language-specific widths and margins.
 
-Eleventy's standard global data loading and pagination discover language JSON
-automatically. Adding a language does not require editing the HTML template,
-JavaScript, or route configuration. The bundled official `I18nPlugin` provides
-page languages and alternate-language URLs for metadata and browser-language
-detection. Nunjucks' built-in `replace` filter inserts placeholders; no separate
-translation library is needed. Build errors catch missing rendered values and
-missing images. `npm run i18n:check` uses `i18n-check` to compare translations
-against English for missing keys, empty translated strings, and ICU placeholder
-mismatches. `npm run build` runs this check before Eleventy, including in CI.
+To check translations without building the site, run:
 
-Text columns use flexible widths, and buttons size to their labels within shared
-maximum widths. Long translations wrap naturally, and sections grow with their
-content. Grid and Flexbox gaps keep image-to-text spacing independent of
-translation length. Avoid manual line breaks or language-specific widths and
-margins.
+```sh
+npm run i18n:check
+```
 
-English is served at `/` and `/en/`, Japanese at `/ja/`, and additional languages
-at their language-tag paths. Eleventy's standard Virtual Templates API generates
-the explicit English URL from the same template, with `/` as its canonical URL.
-The root page checks the browser's preferred languages and redirects to the first
-supported language. Unsupported preferences fall back to English. With JavaScript
-disabled, the root page displays English. Direct links to a language page keep
-that language; there is no language switcher.
+## Optional localized screenshots
 
-## Shared content and assets
-
-- `src/index.njk`: shared page template.
-- `src/_data/site.json`: shared site settings, including the public URL and
-  Google Analytics ID.
-- `src/_data/release.json`: website version, download URL, and minimum macOS
-  version. Update this file once for all languages.
-- `src/_data/screenshots.json`: shared screenshot paths and optional overrides.
-  Each image falls back to its `en` path when the current language has no entry.
-- The bundled official `HtmlBasePlugin` creates absolute metadata URLs with
-  `htmlBaseUrl`; page assets stay on the current host for local and preview builds.
-- `css/` and `js/`: shared styles and scripts. Eleventy's built-in `RenderPlugin`
-  reads them without template processing. The Bundle feature combines the site
-  files with Swiper's published browser JS and CSS from `node_modules`. Generated
-  CSS and JavaScript use content-hashed filenames under `bundle/`. Swiper handles
-  autoplay, arrow navigation, and thumbnail synchronization; no separate bundler
-  or jQuery is needed.
-- `src/img/`: shared images and language-specific screenshots. The official
-  `@11ty/eleventy-img` HTML Transform processes local `<img>` elements automatically
-  and generates content-hashed filenames under `img/`. Passthrough format preserves
-  the original image bytes. Use public paths such as `/img/common/wordmark.png` in
-  the template and shared screenshot data; the plugin resolves them from `src/`.
-  The externally hosted GitHub ribbon opts out with `eleventy:ignore`.
-- `src/img/common/clipboard-history.png` and `src/img/common/snippets.jpg`: the
-  default English screenshots shared by every language unless overridden.
-- `src/img/common/app-icon.png` and `src/favicon*.png`: the OGP image and favicons
-  are copied unchanged to stable public URLs. HTML Transform handles `<img>` and
-  `<picture>`, while metadata uses these ordinary static files.
-- Release-note CSS is copied unchanged. No additional bundler dependency is needed.
-- `appcast.xml` and `releasenotes/`: app update feed and release notes. They are
-  copied as static files; the website release settings are independent of the
-  appcast.
-
-### Optional localized screenshots
-
-Japanese screenshots are provided in `src/img/screenshots/ja/` and selected through
-the shared screenshot metadata.
-
-Screenshot contributions are optional. To override an image, add it under
-`src/img/screenshots/<language>/` and register its public path for that language
-in `src/_data/screenshots.json`. For example, this overrides only the Japanese
-clipboard history image; all other languages and the snippets image keep using
-the shared English images:
+Add images under `src/img/screenshots/<language>/`, then add their public paths
+to [`src/_data/screenshots.json`](src/_data/screenshots.json). For example, add
+a `fr` entry to `clipboardHistory` while keeping the existing language entries:
 
 ```json
 {
   "clipboardHistory": {
     "en": "/img/common/clipboard-history.png",
-    "ja": "/img/screenshots/ja/clipboard-history.png"
-  },
-  "snippets": {
-    "en": "/img/common/snippets.jpg"
+    "ja": "/img/screenshots/ja/clipboard-history.png",
+    "fr": "/img/screenshots/fr/clipboard-history.png"
   }
 }
 ```
 
-The template uses Nunjucks' built-in `default` filter for each image. Main slides
-and thumbnails always use the same selected source. No Eleventy configuration
-changes or additional plugins are needed.
+Each image without an override uses its `en` path. Main slides and thumbnails
+use the same image; no separate thumbnail files are needed.
 
-## Dependency updates
+## Where to make changes
 
-Dependabot checks npm packages and GitHub Actions weekly, with a seven-day
-cooldown matching the main Clipy repository. Version update pull requests start
-after `.github/dependabot.yml` is merged into the default branch. Update the
-Node.js version in `.nvmrc` manually.
-
-Workflow actions are pinned to full commit SHAs with comments showing release
-versions. Use `pinact run` to pin newly added action references.
-
-## Workflow checks and security
-
-Like the main Clipy repository, separate workflows run actionlint, zizmor, and
-CodeQL. Actionlint checks workflow changes in pull requests and fails on errors.
-Zizmor audits Actions on pull requests and pushes to `master`, and uploads findings
-to GitHub code scanning. CodeQL analyzes Actions and JavaScript on those events,
-weekly, and on manual runs. These checks do not require a site build.
-
-Run `actionlint` and `zizmor --offline .github/workflows` locally to check workflow
-changes. The offline audit skips checks that require GitHub API access. CodeQL and
-zizmor findings are available in the repository's **Security → Code scanning** tab.
-
-## Publishing
-
-The GitHub Actions workflow builds and checks pull requests. Successful pushes
-to `master` publish `_site/` to GitHub Pages. The workflow can also be run manually
-from `master`; pull requests and other branches are never deployed.
-
-For the initial migration, set **Settings → Pages → Build and deployment →
-Source** to **GitHub Actions** in the repository. The custom domain remains
-`clipy-app.com` through `CNAME`.
+| Path | Contents |
+| --- | --- |
+| [`src/index.njk`](src/index.njk) | Shared page template |
+| [`src/_data/locales/`](src/_data/locales/) | Translated text |
+| [`src/_data/site.json`](src/_data/site.json) | Shared site metadata and links |
+| [`src/_data/release.json`](src/_data/release.json) | Download information and minimum macOS version |
+| [`src/_data/screenshots.json`](src/_data/screenshots.json) | Screenshot paths and language overrides |
+| [`src/img/common/`](src/img/common/) | Shared images and default English screenshots |
+| [`src/img/screenshots/`](src/img/screenshots/) | Optional localized screenshots |
+| [`css/`](css/) | Shared styles |
+| [`js/slider.js`](js/slider.js) | Screenshot slider behavior |
