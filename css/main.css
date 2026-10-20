@@ -125,7 +125,7 @@ section > div , footer > div{
 	display: block;
 	width: auto;
 	height: auto;
-	max-width: 460px;
+	max-width: min(460px, 85%);
 	max-height: 300px;
 	border-radius: 6px;
 	box-shadow: 0 12px 24px rgba(7, 30, 46, 0.22), 0 2px 6px rgba(7, 30, 46, 0.14);
@@ -221,14 +221,14 @@ section > div , footer > div{
 }
 #function > div, #thanks > div{
 	display: grid;
+	--section-width: clamp(31.25rem, calc(100% - 3rem), 37.5rem);
+	inline-size: var(--section-width);
+	margin-inline: calc((100% - var(--section-width)) / 2);
 	align-items: start;
+	column-gap: 74px;
 }
 #function > div{
-	--function-width: clamp(31.25rem, calc(100% - 3rem), 37.5rem);
-	inline-size: var(--function-width);
-	margin-inline: calc((100% - var(--function-width)) / 2);
 	grid-template-columns: max-content minmax(0, 1fr);
-	column-gap: 74px;
 }
 #function .title, #thanks .title{
 	grid-column: 1 / -1;
@@ -292,8 +292,7 @@ section > div , footer > div{
 	min-block-size: 450px;
 }
 #thanks > div{
-	grid-template-columns: minmax(0, 1fr) 200px;
-	column-gap: 90px;
+	grid-template-columns: minmax(0, 1fr) 148px;
 }
 #thanks-details{
 	min-inline-size: 0;
