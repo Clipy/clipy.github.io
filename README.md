@@ -100,6 +100,21 @@ cooldown matching the main Clipy repository. Version update pull requests start
 after `.github/dependabot.yml` is merged into the default branch. Update the
 Node.js version in `.nvmrc` manually.
 
+Workflow actions are pinned to full commit SHAs with comments showing release
+versions. Use `pinact run` to pin newly added action references.
+
+## Workflow checks and security
+
+Like the main Clipy repository, separate workflows run actionlint, zizmor, and
+CodeQL. Actionlint checks workflow changes in pull requests and fails on errors.
+Zizmor audits Actions on pull requests and pushes to `master`, and uploads findings
+to GitHub code scanning. CodeQL analyzes Actions and JavaScript on those events,
+weekly, and on manual runs. These checks do not require a site build.
+
+Run `actionlint` and `zizmor --offline .github/workflows` locally to check workflow
+changes. The offline audit skips checks that require GitHub API access. CodeQL and
+zizmor findings are available in the repository's **Security → Code scanning** tab.
+
 ## Publishing
 
 The GitHub Actions workflow builds and checks pull requests. Successful pushes
