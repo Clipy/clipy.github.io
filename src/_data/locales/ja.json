@@ -42,5 +42,11 @@
     "secondParagraph": "現状機能が被ってしまっていますが、独自機能を追加してさらなる機能向上を目指していきます。本当にありがとうございました。",
     "authorLabel": "@naotaka氏"
   },
+  "support": {
+    "title": "Clipyをサポート",
+    "firstParagraph": "Clipyは、すべての機能を無料で提供しています。",
+    "secondParagraph": "今後も有料化の予定はありませんが、継続的な開発を支える寄付を受け付けています。ご協力いただける方は、以下の方法でサポートをお願いいたします。",
+    "action": "サポートする"
+  },
   "githubTitle": "GitHub"
 }

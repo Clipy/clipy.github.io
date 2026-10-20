@@ -42,5 +42,11 @@
     "secondParagraph": "Although Clipy currently shares many features with ClipMenu, we aim to keep improving it with features of our own. Thank you for making this possible.",
     "authorLabel": "@naotaka"
   },
+  "support": {
+    "title": "Support Clipy",
+    "firstParagraph": "Clipy offers all of its features for free, and we have no plans to charge for them.",
+    "secondParagraph": "Donations help us continue developing Clipy. If you'd like to support our work, you can contribute through either of the options below.",
+    "action": "Support"
+  },
   "githubTitle": "GitHub"
 }

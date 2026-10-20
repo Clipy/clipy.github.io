@@ -311,6 +311,55 @@ section > div , footer > div{
 	margin-block-start: 30px;
 }
 
+/***** support *****/
+#support{
+	padding-block-end: 64px;
+}
+#support-details{
+	font-size: 16px;
+	line-height: 32px;
+}
+#support-details p + p{
+	margin-block-start: 20px;
+}
+#support-options{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 32px;
+	margin-block-start: 36px;
+}
+.support-option{
+	display: grid;
+	justify-items: center;
+	align-content: start;
+	gap: 12px;
+	text-align: center;
+}
+.support-option img{
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+}
+.support-option h2{
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+}
+.support-option a{
+	box-sizing: border-box;
+	max-inline-size: 100%;
+	border: 1px solid #3999D8;
+	border-radius: 3px;
+	padding: 12px 20px;
+	font-size: 16px;
+	line-height: 24px;
+}
+.support-option a:hover{
+	background-color: #3999D8;
+	color: white;
+	text-decoration: none;
+}
+
 /***** footer *****/
 footer{
 	box-sizing: border-box;

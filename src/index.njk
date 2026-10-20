@@ -160,6 +160,28 @@ eleventyExcludeFromCollections: true
 			</div>
 		</section>
 
+		<section id="support">
+			<div>
+				<h1 class="title">{{ locale.support.title }}</h1>
+				<div id="support-details" class="text-color">
+					<p>{{ locale.support.firstParagraph }}</p>
+					<p>{{ locale.support.secondParagraph }}</p>
+				</div>
+				<ul id="support-options">
+					<li class="support-option">
+						<img src="/img/common/open-collective.svg" alt="" width="32" height="32"/>
+						<h2 class="text-color">Open Collective</h2>
+						<a href="{{ site.openCollectiveUrl }}">{{ locale.support.action }}</a>
+					</li>
+					<li class="support-option">
+						<img src="/img/common/github.svg" alt="" width="32" height="32"/>
+						<h2 class="text-color">GitHub Sponsors</h2>
+						<a href="{{ site.githubSponsorsUrl }}">{{ locale.support.action }}</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
 		<footer>
 			<div>
 				<div id="social">
