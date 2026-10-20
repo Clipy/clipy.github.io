@@ -93,6 +93,13 @@ that language; there is no language switcher.
   copied as static files; the website release settings are independent of the
   appcast.
 
+## Dependency updates
+
+Dependabot checks npm packages and GitHub Actions weekly, with a seven-day
+cooldown matching the main Clipy repository. Version update pull requests start
+after `.github/dependabot.yml` is merged into the default branch. Update the
+Node.js version in `.nvmrc` manually.
+
 ## Publishing
 
 The GitHub Actions workflow builds and checks pull requests. Successful pushes
