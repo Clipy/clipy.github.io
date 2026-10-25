@@ -22,6 +22,7 @@ export default function (eleventyConfig) {
   for (const source of ['css/releasenotes.css', 'releasenotes', 'appcast.xml', 'CNAME', 'src/favicon*.png', 'src/img/common/app-icon.png']) {
     eleventyConfig.addPassthroughCopy(source);
   }
+  // Keep this URL stable: it is used by the README in the main Clipy repository.
   eleventyConfig.addPassthroughCopy({
     'src/img/common/clipboard-history.png': 'img/screenshot1.png'
   });
