@@ -24,7 +24,7 @@ export default function (eleventyConfig) {
   }
   // Keep this URL stable: it is used by the README in the main Clipy repository.
   eleventyConfig.addPassthroughCopy({
-    'src/img/common/clipboard-history.png': 'img/screenshot1.png'
+    'src/img/common/clipboard-history.png': 'static/clipboard-history.png'
   });
   for (const source of ['css/', 'js/', 'src/img/']) {
     eleventyConfig.addWatchTarget(source);
