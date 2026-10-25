@@ -22,6 +22,9 @@ export default function (eleventyConfig) {
   for (const source of ['css/releasenotes.css', 'releasenotes', 'appcast.xml', 'CNAME', 'src/favicon*.png', 'src/img/common/app-icon.png']) {
     eleventyConfig.addPassthroughCopy(source);
   }
+  eleventyConfig.addPassthroughCopy({
+    'src/img/common/clipboard-history.png': 'img/screenshot1.png'
+  });
   for (const source of ['css/', 'js/', 'src/img/']) {
     eleventyConfig.addWatchTarget(source);
   }
