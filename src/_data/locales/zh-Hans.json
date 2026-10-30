@@ -1,0 +1,48 @@
+{
+  "title": "Clipy - macOS 剪贴板管理工具",
+  "description": "一款免费、开源的 macOS 剪贴板管理工具。随时查看剪贴板历史记录，并通过文本片段快速粘贴常用文本。",
+  "ogLocale": "zh_CN",
+  "direction": "ltr",
+  "imageAlt": {
+    "appIcon": "Clipy 应用图标",
+    "forkRibbon": "在 GitHub 上复刻本项目"
+  },
+  "application": {
+    "description": "macOS 剪贴板管理工具",
+    "download": "下载",
+    "requirements": "适用于 macOS {minimumMacOS} 及更高版本"
+  },
+  "screenshots": {
+    "clipboardHistory": {
+      "alt": "剪贴板历史记录"
+    },
+    "snippets": {
+      "alt": "文本片段编辑器"
+    }
+  },
+  "features": {
+    "title": "主要功能",
+    "items": [
+      "扩展剪贴板功能，支持纯文本、图片及其他多种格式。",
+      "通过键盘快捷键随时打开菜单，快速查看剪贴板历史记录。",
+      "将常用文本保存为文本片段，随时粘贴使用。"
+    ]
+  },
+  "openSource": {
+    "title": "开源",
+    "description": "Clipy 是开源项目。欢迎通过{issues}或{pullRequests}报告问题、提出功能建议或参与开发。",
+    "issuesLabel": "问题反馈",
+    "pullRequestsLabel": "拉取请求"
+  },
+  "thanks": {
+    "title": "特别感谢",
+    "firstParagraph": "感谢 {author} 将 ClipMenu 开源。没有这些代码，就无法在 ClipMenu 的基础上开发出 Clipy。",
+    "secondParagraph": "虽然 Clipy 目前与 ClipMenu 有许多相同的功能，我们仍希望通过开发自己的特色功能，不断改进 Clipy。感谢您让这一切成为可能。"
+  },
+  "support": {
+    "title": "支持 Clipy",
+    "firstParagraph": "Clipy 的所有功能均免费提供，我们也没有收费的计划。",
+    "secondParagraph": "为了持续开发 Clipy，我们接受捐赠。如果您愿意支持我们的工作，可以通过以下任一方式捐赠。",
+    "action": "支持"
+  }
+}

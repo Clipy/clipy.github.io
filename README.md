@@ -35,7 +35,8 @@ To add a language:
 1. Copy `src/_data/locales/en.json` to a file named with the language tag,
    such as `src/_data/locales/fr.json`.
 2. Translate the text, including image descriptions, and update `ogLocale`
-   (for example, `fr_FR`). Keep the same keys and JSON structure as English.
+   (for example, `fr_FR`). Set `direction` to `rtl` for right-to-left languages,
+   or keep `ltr` otherwise. Keep the same keys and JSON structure as English.
    Write plain text rather than HTML.
 3. Preview the new page at its language path, such as `/fr/`, and run
    `npm run build` before opening a pull request.

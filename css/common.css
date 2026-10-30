@@ -5,6 +5,10 @@
 	font-family: 'ヒラギノ角ゴ Pro W3' , 'Hiragino Kaku Gothic ProN' , 'Montserrat' , sans-serif;
 }
 
+:lang(uk){
+	font-family: 'Montserrat' , sans-serif;
+}
+
 html , body , div , span , object , iframe ,
 h1 , h2 , h3 , h4 , h5 , h6 , p , blockquote , pre ,
 abbr , address , cite , code ,

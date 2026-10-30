@@ -12,13 +12,13 @@ eleventyExcludeFromCollections: true
 {% set canonicalUrl = '/' if localeCode == site.defaultLocale else page.url %}
 {% set alternates = canonicalUrl | locale_links %}
 {% macro link(url, label) -%}
-<a href="{{ url }}" target="_blank">{{ label }}</a>
+<a href="{{ url }}" target="_blank" dir="auto">{{ label }}</a>
 {%- endmacro -%}
 {% macro scriptJson(value) -%}
 {{ value | dump | replace('<', '\\u003c') | safe }}
 {%- endmacro -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang }}" dir="{{ locale.direction }}">
 
 <head prefix="og: https://ogp.me/ns#">
 	<meta charset="UTF-8"/>
@@ -48,6 +48,23 @@ eleventyExcludeFromCollections: true
 		            }
 		            var separator = candidate.lastIndexOf('-');
 		            candidate = separator === -1 ? '' : candidate.slice(0, separator);
+		        }
+		        if (!language && typeof Intl !== 'undefined' && Intl.Locale) {
+		            try {
+		                var preferredLocale = new Intl.Locale(String(preferences[i])).maximize();
+		                var inferredTags = [
+		                    preferredLocale.language + '-' + preferredLocale.script,
+		                    preferredLocale.language + '-' + preferredLocale.region
+		                ];
+		                for (var k = 0; k < inferredTags.length && !language; k++) {
+		                    var inferred = inferredTags[k].toLowerCase();
+		                    if (Object.prototype.hasOwnProperty.call(routes, inferred)) {
+		                        language = inferred;
+		                    }
+		                }
+		            } catch (error) {
+		                // Ignore malformed language tags and try the next preference.
+		            }
 		        }
 		    }
 		    if (language && language !== defaultLocale) {
@@ -98,9 +115,9 @@ eleventyExcludeFromCollections: true
 
 		<section id="application">
 			<div>
-				<img alt="{{ locale.imageAlt.application }}" id="application-image" src="/img/common/app-illustration.png"/>
+				<img alt="Clipy" id="application-image" src="/img/common/app-illustration.png"/>
 				<div id="application-contents">
-					<img alt="{{ locale.imageAlt.wordmark }}" id="application-name" src="/img/common/wordmark.png"/>
+					<img alt="Clipy" id="application-name" src="/img/common/wordmark.png"/>
 					<p id="application-description" class="text-color">{{ locale.application.description }}</p>
 					<a id="application-download" href="{{ release.downloadUrl }}" onclick="gtag('event', 'download_click', {link_url: this.href, file_name: this.pathname.split('/').pop()});">{{ locale.application.download }}</a>
 					<p id="application-condition" class="text-color">{{ locale.application.requirements | replace('{minimumMacOS}', release.minimumMacOS) }}</p>
@@ -109,7 +126,7 @@ eleventyExcludeFromCollections: true
 		</section>
 
 		<section id="screenshots">
-			<div>
+			<div dir="ltr">
 				<div id="screenshots-contents" class="swiper">
 					<ul class="swiper-wrapper">
 						<li class="swiper-slide"><img class="screenshot" alt="{{ locale.screenshots.clipboardHistory.alt }}" src="{{ clipboardHistorySrc }}"/></li>
@@ -153,10 +170,10 @@ eleventyExcludeFromCollections: true
 			<div>
 				<h1 class="title">{{ locale.thanks.title }}</h1>
 				<div id="thanks-details" class="text-color">
-					<p>{{ locale.thanks.firstParagraph | escape | replace('{author}', link(site.authorUrl, locale.thanks.authorLabel)) }}</p>
+					<p>{{ locale.thanks.firstParagraph | escape | replace('{author}', link(site.authorUrl, '@naotaka')) }}</p>
 					<p>{{ locale.thanks.secondParagraph }}</p>
 				</div>
-				<img alt="{{ locale.imageAlt.clipMenu }}" id="thanks-image" src="/img/common/clipmenu.png"/>
+				<img alt="ClipMenu" id="thanks-image" src="/img/common/clipmenu.png"/>
 			</div>
 		</section>
 
@@ -185,9 +202,9 @@ eleventyExcludeFromCollections: true
 		<footer>
 			<div>
 				<div id="social">
-					<iframe src="https://ghbtns.com/github-btn.html?user=Clipy&amp;repo=Clipy&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="150" height="20" title="{{ locale.githubTitle }}"></iframe>
+					<iframe src="https://ghbtns.com/github-btn.html?user=Clipy&amp;repo=Clipy&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
 				</div>
-				<p id="copyright">&copy;{{ site.copyright }}</p>
+				<p id="copyright" dir="ltr">&copy;{{ site.copyright }}</p>
 			</div>
 		</footer>
 	</body>
