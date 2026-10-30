@@ -1,0 +1,48 @@
+{
+  "title": "Clipy - Gestore degli appunti per macOS",
+  "description": "Un gestore degli appunti gratuito e open source per macOS. Accedi alla cronologia degli appunti e incolla rapidamente i testi che usi più spesso con gli snippet.",
+  "ogLocale": "it_IT",
+  "direction": "ltr",
+  "imageAlt": {
+    "appIcon": "Icona dell’app Clipy",
+    "forkRibbon": "Crea un fork di Clipy su GitHub"
+  },
+  "application": {
+    "description": "Gestore degli appunti per macOS",
+    "download": "Scarica",
+    "requirements": "macOS {minimumMacOS} o successivo"
+  },
+  "screenshots": {
+    "clipboardHistory": {
+      "alt": "Cronologia degli appunti"
+    },
+    "snippets": {
+      "alt": "Editor degli snippet"
+    }
+  },
+  "features": {
+    "title": "Funzionalità",
+    "items": [
+      "Amplia le funzionalità degli appunti con il supporto per testo semplice, immagini e altri formati.",
+      "Apri il menu con una scorciatoia da tastiera per accedere alla cronologia degli appunti quando vuoi.",
+      "Salva i testi che usi più spesso come snippet e incollali in qualsiasi momento."
+    ]
+  },
+  "openSource": {
+    "title": "Open source",
+    "description": "Clipy è open source. Segnalazioni di problemi, richieste di funzionalità e contributi sono benvenuti tramite {issues} o {pullRequests}.",
+    "issuesLabel": "issue",
+    "pullRequestsLabel": "pull request"
+  },
+  "thanks": {
+    "title": "Ringraziamenti speciali",
+    "firstParagraph": "Grazie a {author} per aver pubblicato ClipMenu come progetto open source. Senza quel codice, questo rifacimento di ClipMenu non sarebbe stato possibile.",
+    "secondParagraph": "Sebbene Clipy condivida attualmente molte funzionalità con ClipMenu, vogliamo continuare a migliorarlo con funzionalità proprie. Grazie per averlo reso possibile."
+  },
+  "support": {
+    "title": "Sostieni Clipy",
+    "firstParagraph": "Tutte le funzionalità di Clipy sono gratuite e non abbiamo intenzione di renderle a pagamento.",
+    "secondParagraph": "Le donazioni ci aiutano a continuare lo sviluppo di Clipy. Se desideri sostenere il nostro lavoro, puoi contribuire tramite una delle opzioni qui sotto.",
+    "action": "Sostieni"
+  }
+}

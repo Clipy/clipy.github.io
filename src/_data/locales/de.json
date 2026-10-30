@@ -1,0 +1,48 @@
+{
+  "title": "Clipy - Zwischenablageverwaltung für macOS",
+  "description": "Eine kostenlose Open-Source-App zur Verwaltung der Zwischenablage unter macOS. Greife auf den Verlauf deiner Zwischenablage zu und füge häufig verwendete Texte mithilfe von Textbausteinen schnell ein.",
+  "ogLocale": "de_DE",
+  "direction": "ltr",
+  "imageAlt": {
+    "appIcon": "Clipy-App-Symbol",
+    "forkRibbon": "Clipy auf GitHub forken"
+  },
+  "application": {
+    "description": "Zwischenablageverwaltung für macOS",
+    "download": "Herunterladen",
+    "requirements": "macOS {minimumMacOS} oder neuer"
+  },
+  "screenshots": {
+    "clipboardHistory": {
+      "alt": "Zwischenablageverlauf"
+    },
+    "snippets": {
+      "alt": "Textbaustein-Editor"
+    }
+  },
+  "features": {
+    "title": "Funktionen",
+    "items": [
+      "Erweitere die Funktionen deiner Zwischenablage mit Unterstützung für reinen Text, Bilder und weitere Formate.",
+      "Öffne das Menü per Tastenkürzel, um jederzeit auf den Verlauf deiner Zwischenablage zuzugreifen.",
+      "Speichere häufig verwendete Texte als Textbausteine und füge sie jederzeit ein."
+    ]
+  },
+  "openSource": {
+    "title": "Open Source",
+    "description": "Clipy ist Open Source. Fehlerberichte, Funktionswünsche und Beiträge über {issues} oder {pullRequests} sind willkommen.",
+    "issuesLabel": "Issues",
+    "pullRequestsLabel": "Pull Requests"
+  },
+  "thanks": {
+    "title": "Besonderer Dank",
+    "firstParagraph": "Vielen Dank an {author} dafür, ClipMenu als Open-Source-Software veröffentlicht zu haben. Ohne diesen Code wäre diese Neufassung von ClipMenu nicht möglich gewesen.",
+    "secondParagraph": "Clipy bietet derzeit viele der gleichen Funktionen wie ClipMenu. Mit eigenen Funktionen möchten wir Clipy weiter verbessern. Vielen Dank, dass du dies möglich gemacht hast."
+  },
+  "support": {
+    "title": "Clipy unterstützen",
+    "firstParagraph": "Alle Funktionen von Clipy sind kostenlos, und wir planen nicht, dies zu ändern.",
+    "secondParagraph": "Spenden helfen uns, Clipy weiterzuentwickeln. Wenn du unsere Arbeit unterstützen möchtest, kannst du über eine der folgenden Möglichkeiten spenden.",
+    "action": "Unterstützen"
+  }
+}

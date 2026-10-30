@@ -1,0 +1,48 @@
+{
+  "title": "Clipy - Gerenciador da área de transferência para macOS",
+  "description": "Um gerenciador gratuito e de código aberto da área de transferência para macOS. Acesse o histórico e use snippets para colar rapidamente textos usados com frequência.",
+  "ogLocale": "pt_BR",
+  "direction": "ltr",
+  "imageAlt": {
+    "appIcon": "Ícone do Clipy",
+    "forkRibbon": "Crie um fork no GitHub"
+  },
+  "application": {
+    "description": "Gerenciador da área de transferência para macOS",
+    "download": "Baixar",
+    "requirements": "macOS {minimumMacOS} ou posterior"
+  },
+  "screenshots": {
+    "clipboardHistory": {
+      "alt": "Histórico da área de transferência"
+    },
+    "snippets": {
+      "alt": "Editor de snippets"
+    }
+  },
+  "features": {
+    "title": "Recursos",
+    "items": [
+      "Amplie os recursos da sua área de transferência com suporte a texto sem formatação, imagens e outros formatos.",
+      "Abra o menu com um atalho de teclado para acessar o histórico da área de transferência sempre que precisar.",
+      "Salve textos usados com frequência como snippets e cole-os a qualquer momento."
+    ]
+  },
+  "openSource": {
+    "title": "Código aberto",
+    "description": "O Clipy é de código aberto. Relatos de bugs, sugestões de recursos e contribuições são bem-vindos por meio de {issues} ou {pullRequests}.",
+    "issuesLabel": "issues",
+    "pullRequestsLabel": "pull requests"
+  },
+  "thanks": {
+    "title": "Agradecimentos especiais",
+    "firstParagraph": "Agradecemos a {author} por disponibilizar o ClipMenu como código aberto. Sem esse código, esta recriação não teria sido possível.",
+    "secondParagraph": "Embora o Clipy atualmente compartilhe muitos recursos com o ClipMenu, queremos continuar aprimorando o app com recursos próprios. Agradecemos por tornar isso possível."
+  },
+  "support": {
+    "title": "Apoie o Clipy",
+    "firstParagraph": "Todos os recursos do Clipy são gratuitos e não temos planos de torná-los pagos.",
+    "secondParagraph": "As doações nos ajudam a continuar desenvolvendo o Clipy. Se quiser apoiar nosso trabalho, você pode contribuir por uma das opções abaixo.",
+    "action": "Apoiar"
+  }
+}
