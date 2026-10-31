@@ -81,6 +81,11 @@ p.important {
   border-radius: 0.6em;
 }
 
+main > nav {
+  margin-top: 2em;
+  font-size: 13px;
+}
+
 footer {
   margin: 1.2em 0 0;
   padding: 0.85em 0 0;
