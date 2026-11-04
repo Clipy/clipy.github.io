@@ -1,0 +1,48 @@
+{
+  "title": "Clipy - Upravljač međusremnika za macOS",
+  "description": "Besplatan upravljač međuspremnika otvorenog koda za macOS. Pristupi povijesti međuspremnika i umetni često korišteni tekst pomoću tekstualnih isječaka.",
+  "ogLocale": "hr_HR",
+  "direction": "ltr",
+  "imageAlt": {
+    "appIcon": "Ikona Clipy aplikacije",
+    "forkRibbon": "Izradi vlastitu kopiju na GitHub-u"
+  },
+  "application": {
+    "description": "Upravljač međusremnika za macOS",
+    "download": "Preuzmi",
+    "requirements": "macOS {minimumMacOS} ili novija verzija"
+  },
+  "screenshots": {
+    "clipboardHistory": {
+      "alt": "Povijest međusremnika"
+    },
+    "snippets": {
+      "alt": "Uređivač isječaka"
+    }
+  },
+  "features": {
+    "title": "Funkcije",
+    "items": [
+      "Proširi svoj međuspremnik podrškom za običan tekst, slike i druge formate.",
+      "Otvori izbornik pomoću tipkovnih prečaca za pristup povijesti međuspremnika kad god ti zatreba. ",
+      "Spremi često korišteni tekst kao isječke i umetni ih u bilo kojem trenutku."
+    ]
+  },
+  "openSource": {
+    "title": "Otvoreni kod ",
+    "description": "Clipy je aplikacija otvorenog koda. Izvještaji o greškama, zahtjevi za funkcijama i doprinosi su dobrodošli putem {issues} ili {pullRequests}.",
+    "issuesLabel": "problema",
+    "pullRequestsLabel": "PR-ova"
+  },
+  "thanks": {
+    "title": "Posebna zahvala",
+    "firstParagraph": "Hvala {author} što je objavio/la ClipMenu kao otvoreni kod. Bez tog koda, ova verzija ne bi bila moguća.",
+    "secondParagraph": "Iako Clipy trenutačno dijeli mnoge funkcije s aplikacijom ClipMenu, cilj nam je aplikaciju nastaviti poboljšavati vlastitim funkcijama. Hvala ti što to omogućuješ."
+  },
+  "support": {
+    "title": "Podrži Clipy",
+    "firstParagraph": "Clipy nudi sve svoje funkcije besplatno i ne planiramo ih naplaćivati.",
+    "secondParagraph": "Donacije nam pomažu da nastavimo razvijati Clipy. Ako želiš podržati naš rad, doprinesi putem jedne od dolje navedenih opcija.",
+    "action": "Podrži"
+  }
+}
