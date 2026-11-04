@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.7",
-    "@11ty/eleventy-img": "7.0.0",
+    "@11ty/eleventy-img": "7.1.1",
     "@lingual/i18n-check": "0.9.5",
     "swiper": "14.3.0"
   }
