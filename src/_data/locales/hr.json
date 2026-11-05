@@ -1,14 +1,14 @@
 {
-  "title": "Clipy - Upravljač međusremnika za macOS",
+  "title": "Clipy - Upravljač međuspremnika za macOS",
   "description": "Besplatan upravljač međuspremnika otvorenog koda za macOS. Pristupi povijesti međuspremnika i umetni često korišteni tekst pomoću tekstualnih isječaka.",
   "ogLocale": "hr_HR",
   "direction": "ltr",
   "imageAlt": {
     "appIcon": "Ikona Clipy aplikacije",
-    "forkRibbon": "Izradi vlastitu kopiju na GitHub-u"
+    "forkRibbon": "Izradi vlastitu kopiju na GitHubu"
   },
   "application": {
-    "description": "Upravljač međusremnika za macOS",
+    "description": "Upravljač međuspremnika za macOS",
     "download": "Preuzmi",
     "requirements": "macOS {minimumMacOS} ili novija verzija"
   },
@@ -31,7 +31,7 @@
   "openSource": {
     "title": "Otvoreni kod ",
     "description": "Clipy je aplikacija otvorenog koda. Izvještaji o greškama, zahtjevi za funkcijama i doprinosi su dobrodošli putem {issues} ili {pullRequests}.",
-    "issuesLabel": "problema",
+    "issuesLabel": "prijava problema",
     "pullRequestsLabel": "PR-ova"
   },
   "thanks": {
