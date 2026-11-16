@@ -5,14 +5,14 @@
     <link>https://clipy-app.com/appcast.xml</link>
     <description>Clipy update changelog.</description>
     <item>
-      <title>Clipy 1.4.1</title>
-      <pubDate>Sat, 31 Oct 2026 08:45:39 +0900</pubDate>
-      <sparkle:version>1.4.1</sparkle:version>
-      <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+      <title>Clipy 1.4.2</title>
+      <pubDate>Sun, 15 Nov 2026 18:55:50 +0900</pubDate>
+      <sparkle:version>1.4.2</sparkle:version>
+      <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <sparkle:releaseNotesLink xml:lang="en">https://clipy-app.com/releasenotes/1.4.1.en.html</sparkle:releaseNotesLink>
-      <sparkle:releaseNotesLink xml:lang="ja">https://clipy-app.com/releasenotes/1.4.1.ja.html</sparkle:releaseNotesLink>
-      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.4.1/Clipy_1.4.1.dmg" length="14789947" type="application/octet-stream" sparkle:edSignature="BgL++tExko24b5Wt+uIKnCXu0E56BlyAlLFGtkqz5JP/oVNYtSOOOQ3w+tXoX4X7Ho4uPi9GBoh8er7Em2OKDw==" sparkle:dsaSignature="MCwCFEQAQoccleLJFGkOh8ar/l4oqdZdAhRWw5wuEj/JQTK3NRRb0Xk1EIfkuA=="/>
+      <sparkle:releaseNotesLink xml:lang="en">https://clipy-app.com/releasenotes/1.4.2.en.html</sparkle:releaseNotesLink>
+      <sparkle:releaseNotesLink xml:lang="ja">https://clipy-app.com/releasenotes/1.4.2.ja.html</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/Clipy/Clipy/releases/download/1.4.2/Clipy_1.4.2.dmg" length="14790546" type="application/octet-stream" sparkle:edSignature="PIt7WTjXodBOL6t+z1P3/rheJ6pkodezMTMIflWwjjDtKCQ1K6oZbz0/J6P9YKbF4JbBuinL06GGq3D8EoZmAw==" sparkle:dsaSignature="MCwCFHA3qSDhW31t9LgY/Av5VZJUJpIhAhQv5bHZZLcRGDNlGfA9AB9+ASL0Cg=="/>
     </item>
   </channel>
 </rss>
